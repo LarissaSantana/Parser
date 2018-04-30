@@ -1,0 +1,18 @@
+c:\users\hiago.matos\documents\visual studio 2013\Projects\Parsers\Parsers\bin\Debug\Parsers.exe.config
+c:\users\hiago.matos\documents\visual studio 2013\Projects\Parsers\Parsers\obj\Debug\Parsers.csprojResolveAssemblyReference.cache
+c:\users\hiago.matos\documents\visual studio 2013\Projects\Parsers\Parsers\bin\Debug\Parsers.exe
+c:\users\hiago.matos\documents\visual studio 2013\Projects\Parsers\Parsers\bin\Debug\Parsers.pdb
+c:\users\hiago.matos\documents\visual studio 2013\Projects\Parsers\Parsers\obj\Debug\Parsers.exe
+c:\users\hiago.matos\documents\visual studio 2013\Projects\Parsers\Parsers\obj\Debug\Parsers.pdb
+C:\Users\lucas.britto\Desktop\Parsers\Parsers\Parsers\bin\Debug\Parsers.exe.config
+C:\Users\lucas.britto\Desktop\Parsers\Parsers\Parsers\bin\Debug\Parsers.exe
+C:\Users\lucas.britto\Desktop\Parsers\Parsers\Parsers\bin\Debug\Parsers.pdb
+C:\Users\lucas.britto\Desktop\Parsers\Parsers\Parsers\obj\Debug\Parsers.csprojResolveAssemblyReference.cache
+C:\Users\lucas.britto\Desktop\Parsers\Parsers\Parsers\obj\Debug\Parsers.exe
+C:\Users\lucas.britto\Desktop\Parsers\Parsers\Parsers\obj\Debug\Parsers.pdb
+C:\Users\larissa.santana\Downloads\Parsers\Parsers\Parsers\obj\Debug\Parsers.csprojResolveAssemblyReference.cache
+C:\Users\larissa.santana\Downloads\Parsers\Parsers\Parsers\obj\Debug\Parsers.exe
+C:\Users\larissa.santana\Downloads\Parsers\Parsers\Parsers\obj\Debug\Parsers.pdb
+C:\Users\larissa.santana\Downloads\Parsers\Parsers\Parsers\bin\Debug\Parsers.exe.config
+C:\Users\larissa.santana\Downloads\Parsers\Parsers\Parsers\bin\Debug\Parsers.exe
+C:\Users\larissa.santana\Downloads\Parsers\Parsers\Parsers\bin\Debug\Parsers.pdb
