@@ -207,6 +207,60 @@ namespace Parsers
             }
         }
         #endregion
+        #region ParserSearchOpticsViamondo
+        private void ParserSearchOpticsViamondo(out string nomeContato, out string telefone, out string email)
+        {
+            /* TRATAMENTOS */
+            string TratarTelefone(string tel)
+            {
+                tel = tel.Replace("-", "").Replace("(", "").Replace(")", "").Replace(" ", "").Trim();
+                if (tel.Length > 14) //Telefone inválido
+                    tel = "";
+                return tel;
+            }
+            //Pode ser usado para tratar nome ou título
+            string TratarNome(string nomes)
+            {
+                string pattern = @"(?i)[^0-9a-záéíóúàèìòùâêîôûãõç\s]";
+                Regex rgx = new Regex(pattern);
+                nomes = rgx.Replace(nomes, "");
+                return nomes;
+            }
+
+            //GET NOME DO CLIENTE
+            nomeContato = "";
+            var indice = _email.IndexOf("first_name</td><td>");
+            if (indice >= 0)
+            {
+                indice += 19;
+                var spnIndex = _email.IndexOf("</td>", indice);
+                nomeContato = _email.Substring(indice, ((spnIndex) - (indice))).Trim();
+                nomeContato = TratarNome(nomeContato);
+            }
+
+            //GET TELEFONE
+            telefone = "";
+            indice = _email.IndexOf("mobile</td><td>");
+            if (indice > 0)
+            {
+                indice += 15;
+                var spnIndex = _email.IndexOf("</td>", indice);
+                telefone = _email.Substring(indice, ((spnIndex) - (indice))).Trim();
+                telefone = TratarTelefone(telefone);
+            }
+
+            //GET EMAIL
+            email = "";
+            indice = _email.IndexOf("email</td><td>");
+            if (indice > 0)
+            {
+                indice += 14;
+                var spnIndex = _email.IndexOf("</td>", indice);
+                email = _email.Substring(indice, ((spnIndex) - (indice))).Trim();
+
+            }
+        }
+        #endregion
         #region ParserUsadosBR
         private void ParserUsadosBr(out string nomeContato, out string telefone, out string email, out string titulo, out decimal preco)
         {
@@ -837,6 +891,9 @@ namespace Parsers
                 case Parsers.Nissan:
                     ParserNissanVentuno(out nomeContato, out telefone, out email, out titulo);
                     break;
+                case Parsers.SearchOpticsViamondo:
+                    ParserSearchOpticsViamondo(out nomeContato, out telefone, out email);
+                    break;
                 default:
                     break;
             }
@@ -868,6 +925,7 @@ namespace Parsers
         AutoSergipe,
         Gmail,
         MeuCarroNovo,
-        Nissan
+        Nissan,
+        SearchOpticsViamondo
     }
 }
