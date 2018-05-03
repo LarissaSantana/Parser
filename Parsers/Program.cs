@@ -102,15 +102,28 @@ namespace Parsers
 
             //GET EMAIL
             email = "";
-            var indiceEmail = _email.IndexOf("E-mail");
+            var indiceEmail = _email.IndexOf("Email</span></td>");
             if (indiceEmail >= 0)
             {
-                indiceEmail = _email.IndexOf("<span", indiceEmail);
                 if (indiceNome >= 0)
                 {
-                    indiceEmail = _email.IndexOf(">", indiceEmail) + 1;
+                    indiceEmail = _email.IndexOf(@";" + "\">", indiceEmail) + 3;
                     var brIndex = _email.IndexOf("</span>", indiceEmail);
                     email = _email.Substring(indiceEmail, brIndex - indiceEmail).Trim();
+                }
+            }
+            else
+            {
+                indiceEmail = _email.IndexOf("E-mail");
+                if (indiceEmail >= 0)
+                {
+                    indiceEmail = _email.IndexOf("<span", indiceEmail);
+                    if (indiceNome >= 0)
+                    {
+                        indiceEmail = _email.IndexOf(">", indiceEmail) + 1;
+                        var brIndex = _email.IndexOf("</span>", indiceEmail);
+                        email = _email.Substring(indiceEmail, brIndex - indiceEmail).Trim();
+                    }
                 }
             }
 
