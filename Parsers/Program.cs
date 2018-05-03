@@ -71,7 +71,8 @@ namespace Parsers
                 {
                     indiceNome = _email.IndexOf(">", indiceNome) + 1;
                     var brIndex = _email.IndexOf("</span>", indiceNome);
-                    nomeContato = _email.Substring(indiceNome, ((brIndex) - (indiceNome))).Trim();
+                    if (indiceNome < _email.Length && brIndex > indiceNome && brIndex - indiceNome < _email.Length)
+                        nomeContato = _email.Substring(indiceNome, ((brIndex) - (indiceNome))).Trim();
                     nomeContato = TratarNome(nomeContato);
                 }
             }
@@ -85,7 +86,8 @@ namespace Parsers
                 indiceTelefone = _email.IndexOf("<span", indiceTelefone);
                 indiceTelefone = _email.IndexOf(">", indiceTelefone) + 1;
                 var endIndiceTelefone = _email.IndexOf("<", indiceTelefone);
-                telefone = _email.Substring(indiceTelefone, endIndiceTelefone - indiceTelefone - 1);
+                if (indiceTelefone < _email.Length && endIndiceTelefone > indiceTelefone && endIndiceTelefone - indiceTelefone < _email.Length)
+                    telefone = _email.Substring(indiceTelefone, endIndiceTelefone - indiceTelefone - 1).Replace("-", String.Empty).Replace(".", String.Empty).Replace("(", String.Empty).Replace(")", String.Empty).Replace(" ", String.Empty).Trim();
                 telefone = TratarTelefone(telefone);
             }
             var indiceCelular = _email.IndexOf("Celular");
@@ -94,7 +96,8 @@ namespace Parsers
                 indiceCelular = _email.IndexOf("<span", indiceCelular);
                 indiceCelular = _email.IndexOf(">", indiceCelular) + 1;
                 var endIndiceCelular = _email.IndexOf("<", indiceCelular);
-                celular = _email.Substring(indiceCelular, endIndiceCelular - indiceCelular - 1);
+                if (indiceCelular < _email.Length && endIndiceCelular > indiceCelular && endIndiceCelular - indiceCelular < _email.Length)
+                    celular = _email.Substring(indiceCelular, endIndiceCelular - indiceCelular - 1).Replace(".", String.Empty).Replace("(", String.Empty).Replace(")", String.Empty).Replace(" ", String.Empty).Replace("-", String.Empty).Trim();
                 celular = TratarTelefone(celular);
             }
             if (string.IsNullOrEmpty(telefone))
@@ -109,7 +112,8 @@ namespace Parsers
                 {
                     indiceEmail = _email.IndexOf(@";" + "\">", indiceEmail) + 3;
                     var brIndex = _email.IndexOf("</span>", indiceEmail);
-                    email = _email.Substring(indiceEmail, brIndex - indiceEmail).Trim();
+                    if (indiceEmail < _email.Length && brIndex > indiceEmail && brIndex - indiceEmail < _email.Length)
+                        email = _email.Substring(indiceEmail, brIndex - indiceEmail).Trim();
                 }
             }
             else
@@ -122,7 +126,8 @@ namespace Parsers
                     {
                         indiceEmail = _email.IndexOf(">", indiceEmail) + 1;
                         var brIndex = _email.IndexOf("</span>", indiceEmail);
-                        email = _email.Substring(indiceEmail, brIndex - indiceEmail).Trim();
+                        if (indiceEmail < _email.Length && brIndex > indiceEmail && brIndex - indiceEmail < _email.Length)
+                            email = _email.Substring(indiceEmail, brIndex - indiceEmail).Trim();
                     }
                 }
             }
@@ -137,7 +142,8 @@ namespace Parsers
                 {
                     indiceTitulo = _email.IndexOf(">", indiceTitulo) + 1;
                     var aIndex = _email.IndexOf("</a>", indiceTitulo);
-                    titulo = _email.Substring(indiceTitulo, aIndex - indiceTitulo).Trim();
+                    if (indiceTitulo < _email.Length && aIndex > indiceTitulo && aIndex - indiceTitulo < _email.Length)
+                        titulo = _email.Substring(indiceTitulo, aIndex - indiceTitulo).Trim();
                 }
             }
 
@@ -147,17 +153,22 @@ namespace Parsers
             if (indicePreco > 0)
             {
                 var splitIndex = titulo.Length;
-                var _preco = titulo.Substring(indicePreco, splitIndex - indicePreco).Trim();
-                _preco = _preco.Replace(".", ",");
-                string padrao = @"[p][r][e][ç][o][\s]*[R][$]([\d]*[.]?[\d]*)+[,][\d]{2}";
-                Regex rx = new System.Text.RegularExpressions.Regex(padrao);
-                padrao = @"([\d]*[.]?[\d]*)+[,][\d]{2}";
-                rx = new System.Text.RegularExpressions.Regex(padrao);
-                Decimal.TryParse(rx.Match(_preco).Value, out preco);
-                if (preco > 0 && preco < 1000) preco = preco * 1000;
+                if (indicePreco < _email.Length && splitIndex > indicePreco && splitIndex - indicePreco < _email.Length)
+                {
+                    var _preco = titulo.Substring(indicePreco, splitIndex - indicePreco).Trim();
+                    _preco = _preco.Replace(".", ",");
+                    string padrao = @"[p][r][e][ç][o][\s]*[R][$]([\d]*[.]?[\d]*)+[,][\d]{2}";
+                    Regex rx = new System.Text.RegularExpressions.Regex(padrao);
+                    padrao = @"([\d]*[.]?[\d]*)+[,][\d]{2}";
+                    rx = new System.Text.RegularExpressions.Regex(padrao);
+                    Decimal.TryParse(rx.Match(_preco).Value, out preco);
+                    if (preco > 0 && preco < 1000) preco = preco * 1000;
+                }
             }
         }
         #endregion
+
+
         #region ParserNissan
         private void ParserNissanVentuno(out string nome, out string telefone, out string email, out string titulo)
         {
