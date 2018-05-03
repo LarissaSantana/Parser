@@ -43,6 +43,24 @@ namespace Parsers
         #region ParseriCarros
         private void ParseriCarros(out string nomeContato, out string telefone, out string email, out string titulo, out decimal preco)
         {
+            #region Tratamentos
+            string TratarTelefone(string tel)
+            {
+                tel = tel.Replace("-", "").Replace("(", "").Replace(")", "").Replace(" ", "").Trim();
+                if (tel.Length > 14) //Telefone inválido
+                    tel = "";
+                return tel;
+            }
+            //Pode ser usado para tratar nome ou título
+            string TratarNome(string nomes)
+            {
+                string pattern = @"(?i)[^0-9a-záéíóúàèìòùâêîôûãõç\s]";
+                Regex rgx = new Regex(pattern);
+                nomes = rgx.Replace(nomes, "");
+                return nomes;
+            }
+            #endregion
+
             //GET NOME DO CLIENTE
             nomeContato = "";
             var indiceNome = _email.IndexOf("Nome");
@@ -54,8 +72,8 @@ namespace Parsers
                     indiceNome = _email.IndexOf(">", indiceNome) + 1;
                     var brIndex = _email.IndexOf("</span>", indiceNome);
                     nomeContato = _email.Substring(indiceNome, ((brIndex) - (indiceNome))).Trim();
+                    nomeContato = TratarNome(nomeContato);
                 }
-
             }
 
             //GET TELEFONE
@@ -67,7 +85,8 @@ namespace Parsers
                 indiceTelefone = _email.IndexOf("<span", indiceTelefone);
                 indiceTelefone = _email.IndexOf(">", indiceTelefone) + 1;
                 var endIndiceTelefone = _email.IndexOf("<", indiceTelefone);
-                telefone = _email.Substring(indiceTelefone, endIndiceTelefone - indiceTelefone - 1).Replace("-", String.Empty).Replace(".", String.Empty).Replace("(", String.Empty).Replace(")", String.Empty).Replace(" ", String.Empty).Trim();
+                telefone = _email.Substring(indiceTelefone, endIndiceTelefone - indiceTelefone - 1);
+                telefone = TratarTelefone(telefone);
             }
             var indiceCelular = _email.IndexOf("Celular");
             if (indiceCelular >= 0)
@@ -75,14 +94,15 @@ namespace Parsers
                 indiceCelular = _email.IndexOf("<span", indiceCelular);
                 indiceCelular = _email.IndexOf(">", indiceCelular) + 1;
                 var endIndiceCelular = _email.IndexOf("<", indiceCelular);
-                celular = _email.Substring(indiceCelular, endIndiceCelular - indiceCelular - 1).Replace(".", String.Empty).Replace("(", String.Empty).Replace(")", String.Empty).Replace(" ", String.Empty).Replace("-", String.Empty).Trim();
+                celular = _email.Substring(indiceCelular, endIndiceCelular - indiceCelular - 1);
+                celular = TratarTelefone(celular);
             }
             if (string.IsNullOrEmpty(telefone))
                 telefone = celular;
 
             //GET EMAIL
             email = "";
-            var indiceEmail = _email.IndexOf("Email");
+            var indiceEmail = _email.IndexOf("E-mail");
             if (indiceEmail >= 0)
             {
                 indiceEmail = _email.IndexOf("<span", indiceEmail);
@@ -96,7 +116,7 @@ namespace Parsers
 
             //GET Titulo
             titulo = "";
-            var indiceTitulo = _email.IndexOf("proposta referente");
+            var indiceTitulo = _email.IndexOf("referente ao an");
             if (indiceTitulo >= 0)
             {
                 indiceTitulo = _email.IndexOf("<a", indiceTitulo);
@@ -210,7 +230,7 @@ namespace Parsers
         #region ParserSearchOpticsViamondo
         private void ParserSearchOpticsViamondo(out string nomeContato, out string telefone, out string email)
         {
-            /* TRATAMENTOS */
+            #region Tratamentos
             string TratarTelefone(string tel)
             {
                 tel = tel.Replace("-", "").Replace("(", "").Replace(")", "").Replace(" ", "").Trim();
@@ -226,6 +246,7 @@ namespace Parsers
                 nomes = rgx.Replace(nomes, "");
                 return nomes;
             }
+            #endregion
 
             //GET NOME DO CLIENTE
             nomeContato = "";
