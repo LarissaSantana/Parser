@@ -1,0 +1,20 @@
+
+<div class="modal-content" style="width:800px;">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h4 class="modal-title" data-bind="text: Lea_Titulo">Landing Page</h4>
+                        <!-- ko if: Sta_Staging() && Sta_Staging().length > 0 && Sta_Staging()[0].Stp_StagingPart.length > 0 --><!-- /ko -->
+                    </div>
+                    <div class="modal-body">
+                        <audio controls="" data-bind="visible: Sta_Staging().length > 0" style="display: none;">
+                            <source id="playmp3" type="audio/mpeg" data-bind="attr: { src: $root.AudioUrl }">
+                            Your browser does not support the audio element.
+                        </audio>
+                        <!-- ko if: Lea_OrigemSecundaria() != null --><!-- /ko -->
+                        <!-- ko if: Lea_SubOrigem() != null --><!-- /ko -->                        
+                        <!-- ko if: Lea_Descricao -->
+                        <p data-bind="html: Lea_Descricao" id="emailBody"><h3>Form Details</h3><table border="1" width="100%"><tbody><tr><td>first_name</td><td>Karina </td></tr><tr><td>email</td><td>Karinna-borges@hotmail.com  </td></tr><tr><td>mobile</td><td>35 988219920</td></tr><tr><td>Mensagem</td><td></td></tr><tr><td>Tipo de interesse</td><td>Vendas Especiais</td></tr><tr><td>Lead Setter</td><td>2</td></tr><tr><td>dealerHTML</td><td>982b22b00c4f63fdbba31bd598ec3e18@email.connectlead.com.br</td></tr><tr><td>utm_campaign</td><td>facebook:click</td></tr><tr><td>utm_source</td><td>social</td></tr><tr><td>utm_medium</td><td>facebook</td></tr><tr><td>utm_uptracs</td><td>facebook:click</td></tr><tr><td>received_from_url</td><td>http://www.viamondorenault.com.br/landing-page.html?utm_campaign=facebook%3aclick&amp;utm_source=social&amp;utm_medium=facebook</td></tr></tbody></table></p>
+                        <!-- /ko -->
+                       
+                    </div>
+                </div>

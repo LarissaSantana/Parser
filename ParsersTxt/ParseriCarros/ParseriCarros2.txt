@@ -1,0 +1,470 @@
+
+<div class="modal-content" style="width:800px;">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h4 class="modal-title" data-bind="text: Lea_Titulo">Proposta  Recebida: Fiat Grand Siena Evo Attractive 1.0 (Flex) 0km</h4>
+                        <!-- ko if: Sta_Staging() && Sta_Staging().length > 0 && Sta_Staging()[0].Stp_StagingPart.length > 0 --><!-- /ko -->
+                    </div>
+                    <div class="modal-body">
+                        <audio controls="" data-bind="visible: Sta_Staging().length > 0" style="display: none;">
+                            <source id="playmp3" type="audio/mpeg" data-bind="attr: { src: $root.AudioUrl }">
+                            Your browser does not support the audio element.
+                        </audio>
+                        <!-- ko if: Lea_OrigemSecundaria() != null --><!-- /ko -->
+                        <!-- ko if: Lea_SubOrigem() != null --><!-- /ko -->                        
+                        <!-- ko if: Lea_Descricao -->
+                        <p data-bind="html: Lea_Descricao" id="emailBody">
+<meta charset="utf-8">
+	<title>iCarros</title>
+
+
+<div>
+<table cellpadding="0" cellspacing="0" height="100%" style="background-color:#f4f4f4;" width="100%">
+	<tbody>
+		<tr>
+			<td align="center">
+			<table align="center" cellpadding="0" cellspacing="0" style="text-align:center; @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600); font-family:'Open Sans', helvetica, arial, sans-serif;" width="460">
+				<tbody>
+					
+					<tr>
+						<td height="20"></td>
+					</tr>
+					
+					<!-- Início Preheader -->
+					
+					<tr>
+						<td style="display:none !important; visibility:hidden; mso-hide:all; font-size:1px; color:#ffffff; line-height:1px; max-height:0px; max-width:0px; opacity:0; overflow:hidden;"> Proposta Recebida</td>
+					</tr>
+					
+					<!-- Fim Preheader -->
+					
+					<tr>
+						<td colspan="3" height="20" style="background-color:#2867c9; font-family:'Open Sans', helvetica, arial, sans-serif; font-size: 20px; line-height: 20px; border-radius: 8px 8px 0px 0px;"></td>
+					</tr>
+					<tr style="background-color:#2867c9;">
+						<td colspan="3">
+						<table align="center" cellpadding="0" cellspacing="0">
+							<tbody>
+								<tr>
+									<td colspan="3"><a href="http://link.icarros.com.br/wf/click?upn=Bc-2B5VTzPecQpTN7rMxhq68hBojJWmgcb36T-2B0Lz4OESr2H-2BautDmJKvGXZAyQopFfNcUKNEtqQV532E5NrUcf4S2Gc5nZvU-2BF25B1UBMFavity3pscNL9bn-2Bwg0sJf4-2FH6-2FwkpR-2F130B39h3L97FNDx41wS4-2BBbM2VbvjrgFOF0K3LB3M4VKROLg7WQHKjwz2VegxIC-2BYCyiwQyeS87sXKLI1IZa629bcdLqQxxfZP2WhjLsJmpi2t2IszrQmZJT_dwauHgH0TP42By36sszv54JqkKsUPNS0H-2FG2OMZlVGGHAYqVGTqcbsxUmQPrI0xlL9VBXBXnaI6Cxiq-2B1KkRqRQvr2QUCKiMAZN-2BuAT3ZWWE9uakt5k94lIMiHKe3vDaN1byixe3FrtpZYm27GQihrGFYzHOPIyxExNAm3jSUf2Z0s8mmVINp2EHyksmrtN1qabr271D8mZ3XMhNLbwKT-2FtTiOySYH8RiqewvbaQLHbbLuP1U-2FqLbHlBS-2FnybnccPMmf37VzFehqzMsokmVH-2Bg-3D-3D" target="_blank"><img border="0" height="40" src="https://marketing-image-production.s3.amazonaws.com/uploads/a4702c9b2114210a62f63bd82cb8b24f243f7223ebaf78c660e59134b2be874e846c63dc4e1a7dfe48994c5a57288ee3864ba10a28343ddd3d9aa41b486b1c6b.png" style="display: block;" width="122"></a></td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="3" height="20" style="background-color:#2867c9; line-height: 20px;"></td>
+					</tr>
+
+<!-- Início Conteúdo -->
+                    <tr>
+                        <td>
+                            <table cellpadding="0" cellspacing="0" align="center" width="460">	
+						
+							<!-- Início Bloco 1 -->
+								
+								<tbody><tr>
+									<td colspan="3" style="background-color: #ffffff; border-radius: 0px 0px 8px 8px;">
+                        				<table cellpadding="0" cellspacing="0">
+                            				<tbody>
+												<tr>
+                                    				<td colspan="3" height="30"></td>
+                                				</tr>
+												<tr>
+													<td width="30"></td>
+													<td align="left" width="400"><span style="font-family:'Open Sans', helvetica, arial, sans-serif; font-size:22px; color:#444444; text-align:justify; font-weight: 700;">Olá ITALIANA-CARUARU,<br>você recebeu uma nova proposta
+          
+              
+          
+!</span></td>
+													<td width="30"></td>
+												</tr>
+												<tr>
+                                    				<td colspan="3" height="30"></td>
+                                				</tr>
+												<tr>
+													<td width="30"></td>
+													<td align="justify" width="400"><span style="font-family:'Open Sans', helvetica, arial, sans-serif; font-size:14px; color:#444444; text-align:justify; font-weight: 400;">A proposta é referente ao anúncio:</span></td>
+													<td width="30"></td>
+												</tr>
+												<tr>
+                                    				<td colspan="3" height="5"></td>
+                                				</tr>
+												<tr>
+													<td width="30"></td>
+													<td align="justify" width="400">
+<a id="icrLnk_17187791" href="http://link.icarros.com.br/wf/click?upn=Bc-2B5VTzPecQpTN7rMxhq68hBojJWmgcb36T-2B0Lz4OESFM17VovKr-2F08XbTi5TlKOgcbkE7pSswsoNuM7yLeERVu8JxHxUF69UMJZdyUK9Gms91yILDfaq57DxdxhFCDtWalZowzcVi6fa4M1gTCaTP7LE8KuGxYiHOI5PWFaOV5xc-2BJ2SNofpSlu6eY4bnkZ-2F9iDQX6RORGJmFwtLhwVgaC4fxqaWJ9JkEVh7fcKnQHMtNoJQgXfSTfU7NSQZi-2BjhUD77rToar9GEU0T19dLrQ-3D-3D_dwauHgH0TP42By36sszv54JqkKsUPNS0H-2FG2OMZlVGGHAYqVGTqcbsxUmQPrI0xlL9VBXBXnaI6Cxiq-2B1KkRqVnmYw31Fur5Xgaj5RX9HxDjBXbZbw-2F219vipmUoiC1viANDvbLbtItys06cB3pFkagVaxQVssJJhusAqXPGaljrWGY8vhd-2BswacZOk7x2z2sKk5eyXlqvTwRp6AJPAGbYggCD0VbSbHAdnUHrseDEIL9-2FFEHuz-2FO5YFY82rBVbqsVMAw0Nq-2F3PKnq6PSDNO7A-3D-3D" target="_blank" style="font-family:'Open Sans', helvetica, arial, sans-serif; font-size:13px; color:#2262CD; text-align:justify; font-weight: 600; text-decoration: underline;">
+Fiat Grand Siena Evo Attractive 1.0 (Flex) 0Km - R$ 43.990 (gsat10) </a></td>
+													<td width="30"></td>
+												</tr>
+												<tr>
+                                    				<td colspan="3" height="15"></td>
+                                				</tr>
+												<tr>
+													<td width="30"></td>
+													<td align="center" width="400" height="1" style="border-top:1px solid #EDEDED;"></td>
+													<td width="30"></td>
+												</tr>
+												<tr>
+                                    				<td colspan="3" height="15"></td>
+                                				</tr>
+
+    
+			<tr>
+													<td width="30"></td>
+													<td align="justify" width="400">
+<span style="font-family:'Open Sans', helvetica, arial, sans-serif; font-size:13px; color:#444444; text-align:justify; font-weight: 600;">Proposta Nº 7825205</span>
+
+<span style="font-family:'Open Sans', helvetica, arial, sans-serif; font-size:13px; color:#444444; text-align:justify; font-weight: 400;"> - 02/05/2018 - 15:26hr</span>
+
+</td>
+													<td width="30"></td>
+                        </tr>
+     
+
+
+												<tr>
+                                    				<td colspan="3" height="30"></td>
+                                				</tr>
+												
+                                			</tbody>
+                            			</table>
+                         			</td>
+								</tr>
+					
+							<!-- Fim Bloco 1 -->
+							
+							<!-- Fim Notícias -->	
+								
+								<tr>
+                        			<td colspan="3" height="10" style="background-color: #f4f4f4;"></td>
+                    			</tr>
+								
+							<!-- Fim Notícias -->
+<!-- NIVEL INTERRESE -->
+
+<tr>
+<td colspan="3" style="background-color: #ffffff; border-radius: 8px;">
+<table cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td colspan="3" height="30"></td>
+</tr>
+<tr>
+													<td colspan="5" align="center" width="460" valign="middle">
+														<table cellpadding="0" cellspacing="0">
+														<tbody>
+															<tr>
+																<td width="30"></td>
+<td align="left" width="80" height="80">
+    <img src="https://res.cloudinary.com/dt2attta6/image/upload/v1524242394/crm/imagens/emails/qualificador_lead/perfil-.png" width="80" height="80" style="display: block">
+</td>
+																<td width="15"></td>
+																<td align="left" width="305"><span style="font-family:'Open Sans', helvetica, arial, sans-serif; font-size:14px; color:#444444; text-align:justify; font-weight: 600; padding-bottom: 5px;">Nível de interesse</span><br><span style="font-family:'Open Sans', helvetica, arial, sans-serif; font-size:12px; color:#444444; text-align:justify; font-weight: 400;"></span></td>
+																<td width="30"></td>
+															</tr>	
+															
+															<tr><td width="30"></td>
+														</tr></tbody>
+														</table>
+													</td>
+												</tr>
+												<tr>
+                                    				<td colspan="3" height="30"></td>
+                                				</tr>
+												
+                                			</tbody>
+                            			</table>
+                         			</td>
+								</tr>
+								
+								
+<tr>
+    <td colspan="3" height="10" style="background-color: #f4f4f4;"></td>
+</tr>
+
+<!-- FIM NIVEL INTERRESE -->
+
+
+
+	
+
+								<tr>
+									<td colspan="3" style="background-color: #ffffff; border-radius: 8px 8px 0px 0px;">
+                        				<table cellpadding="0" cellspacing="0">
+                            				<tbody>
+                                                                <tr>
+                                    				   <td colspan="3" height="30"></td>
+                                				</tr>
+
+
+
+
+
+								<tr>
+									<td colspan="5">
+									<table cellpadding="0" cellspacing="0">
+										<tbody>
+											<tr>
+
+
+
+
+
+
+
+																</tr>
+															</tbody>
+														</table>
+													</td>
+                                                                                                   </tr>
+
+
+
+
+												<tr>
+													<td width="30"></td>
+													<td align="left" width="400"><span style="font-family:'Open Sans', helvetica, arial, sans-serif; font-size:14px; color:#444444; text-align:justify; font-weight: 700;">Informações do cliente</span></td>
+													<td width="30"></td>
+												</tr>
+												
+												<tr>
+                                    				<td colspan="3" height="15"></td>
+                                				</tr>
+												<tr>
+													<td width="30"></td>
+													<td align="center" width="400" height="1" style="border-top:1px solid  #dfdfdf;"></td>
+													<td width="30"></td>
+												</tr>
+												<tr>
+                                    				<td colspan="3" height="15"></td>
+                                				</tr>
+												<tr>
+													<td colspan="5" align="center" width="460" valign="middle">
+														<table cellpadding="0" cellspacing="0">
+														<tbody>
+															<tr>
+																<td width="30"></td>
+																<td align="left" width="185"><span style="font-family:'Open Sans', helvetica, arial, sans-serif; font-size:12px; color:#444444; text-align:justify; font-weight: 400;">Nome</span></td>
+																<td width="30"></td>
+																<td align="left" width="185"><span style="font-family:'Open Sans', helvetica, arial, sans-serif; font-size:12px; color:#444444; text-align:justify; font-weight: 400;">Paulo severiano dá silva</span></td>
+																<td width="30"></td>
+															</tr>	
+															
+															<tr><td width="30"></td>
+														</tr></tbody>
+														</table>
+													</td>
+												</tr>
+												<tr>
+                                    				<td colspan="3" height="10"></td>
+                                				</tr>
+
+<tr>
+													<td colspan="5" align="center" width="460" valign="middle">
+														<table cellpadding="0" cellspacing="0">
+														<tbody>
+															<tr>
+																<td width="30"></td>
+																<td align="left" width="185"><span style="font-family:'Open Sans', helvetica, arial, sans-serif; font-size:12px; color:#444444; text-align:justify; font-weight: 400;">Email</span></td>
+																<td width="30"></td>
+																<td align="left" width="185"><span style="font-family:'Open Sans', helvetica, arial, sans-serif; font-size:12px; color:#444444; text-align:justify; font-weight: 400;">billygrahamp@hotmail.com</span></td>
+																<td width="30"></td>
+															</tr>	
+															
+															<tr><td width="30"></td>
+														</tr></tbody>
+														</table>
+													</td>
+												</tr>
+
+<tr>
+    <td colspan="3" height="10"></td>
+</tr>
+<tr>
+    <td colspan="5" align="center" width="460" valign="middle">
+        <table cellpadding="0" cellspacing="0">
+              <tbody>
+                    <tr>
+                       <td width="30"></td>
+                       <td align="left" width="185"><span style="font-family:'Open Sans', helvetica, arial, sans-serif; font-size:12px; color:#444444; text-align:justify; font-weight: 400;">Telefone</span></td>
+                       <td width="30"></td>
+                       <td align="left" width="185">
+                            <span style="font-family:'Open Sans', helvetica, arial, sans-serif; font-size:12px; color:#444444; text-align:justify; font-weight: 400;">
+               (81) 99984-6934
+                            </span>
+                       </td>
+                       <td width="30"></td>
+                   </tr>																
+                   <tr>
+                       <td width="30"></td>
+                   </tr>
+            </tbody>
+      </table>
+    </td>
+</tr>
+
+
+
+
+<!-- condicao -->
+
+												
+<tr>
+                                    				<td colspan="3" height="30"></td>
+                                				</tr>
+												<tr>
+													<td width="30"></td>
+													<td align="left" width="400"><span style="font-family:'Open Sans', helvetica, arial, sans-serif; font-size:14px; color:#444444; text-align:justify; font-weight: 700;">Condições</span></td>
+													<td width="30"></td>
+												</tr>
+												
+												<tr>
+                                    				<td colspan="3" height="15"></td>
+                                				</tr>
+												<tr>
+													<td width="30"></td>
+													<td align="center" width="400" height="1" style="border-top:1px solid  #dfdfdf;"></td>
+													<td width="30"></td>
+												</tr>
+												<tr>
+                                    				<td colspan="3" height="15"></td>
+                                				</tr>
+												<tr>
+													<td colspan="5" align="center" width="460" valign="middle">
+														<table cellpadding="0" cellspacing="0">
+														<tbody>
+															<tr>
+																<td width="30"></td>
+																<td align="left" width="185"><span style="font-family:'Open Sans', helvetica, arial, sans-serif; font-size:12px; color:#444444; text-align:justify; font-weight: 400;">Financiamento</span></td>
+																<td width="30"></td>
+																<td align="left" width="185"><span style="font-family:'Open Sans', helvetica, arial, sans-serif; font-size:12px; color:#444444; text-align:justify; font-weight: 400;">R$ 13.197 + x de R$ </span></td>
+																<td width="30"></td>
+															</tr>	
+															
+															<tr><td width="30"></td>
+														</tr></tbody>
+														</table>
+													</td>
+												</tr>
+
+<!-- condicao -->
+												
+												
+												<tr>
+                                    				<td colspan="3" height="30"></td>
+                                				</tr>
+
+												<tr>
+													<td width="30"></td>
+													<td align="left" width="400"><span style="font-family:'Open Sans', helvetica, arial, sans-serif; font-size:14px; color:#444444; text-align:justify; font-weight: 700;">Mensagem</span></td>
+													<td width="30"></td>
+												</tr>
+												
+												<tr>
+                                    				<td colspan="3" height="15"></td>
+                                				</tr>
+												<tr>
+													<td width="30"></td>
+													<td align="center" width="400" height="1" style="border-top:1px solid  #dfdfdf;"></td>
+													<td width="30"></td>
+												</tr>
+												<tr>
+                                    				<td colspan="3" height="15"></td>
+                                				</tr>
+												<tr>
+													<td colspan="3" align="center" width="460" valign="middle">
+														<table cellpadding="0" cellspacing="0">
+														<tbody>
+															<tr>
+																<td width="30"></td>
+																<td align="justify" width="400"><span style="font-family:'Open Sans', helvetica, arial, sans-serif; font-size:12px; color:#444444; text-align:justify; font-weight: 400;">
+          <span style="font-style: italic;">“Não informado pelo cliente”</span>
+        </span></td>
+																<td width="30"></td>
+															</tr>	
+															
+															<tr><td width="30"></td>
+														</tr></tbody>
+														</table>
+													</td>
+												</tr>
+												<tr>
+                                    				<td colspan="3" height="30"></td>
+                                				</tr>
+
+				<tr>
+                                      <td colspan="3" height="30"></td>
+                                </tr>
+												
+                                			</tbody>
+                            			</table>
+                         			</td>
+								</tr>
+					
+							<!-- Fim Bloco 1 -->
+								
+							<!-- Fim Veja Também -->
+					
+							<!-- Início Recomendações -->
+								
+
+                    
+                    </tbody></table>
+                        </td>
+                    </tr>
+
+<!-- Início Footer -->
+					<tr style="background-color:#2867c9;">
+						<td height="44" style=" border-radius: 0px 0px 8px 8px;">
+						<table align="center" cellpadding="0" cellspacing="0" height="44">
+							<tbody>
+								<tr>
+									
+<td align="center" style="padding-left:9px; padding-right:9px;"><span style="font-family:'Open Sans', helvetica, arial, sans-serif; font-size:13px; color:#FFFFFF;"><a alias="Portal Revenda" href="http://link.icarros.com.br/wf/click?upn=Bc-2B5VTzPecQpTN7rMxhq68hBojJWmgcb36T-2B0Lz4OERtuSoCeCzo5XTprixWRkWegSr3gL4e7Xcfvc9RW3ZTxxyjYmGzdt6-2BbaOTm-2FKtSc-2BrHWU-2BCK-2Br6kHl9y0eilC2kr4ois6WD0xxZYf8lNG9r6Fp-2Fpzekh5SnHvOSMSDdP-2FP1smfXgsmb81NuT9IYSwjTANhxMWvLhI3FEnqenmos16mJ8W0MYKjJJkYfIkHkgZ-2B4PclMnDds-2Bb5ftHmyENy0sMXAoekx4eoOOvVVOHBfw-3D-3D_dwauHgH0TP42By36sszv54JqkKsUPNS0H-2FG2OMZlVGGHAYqVGTqcbsxUmQPrI0xlL9VBXBXnaI6Cxiq-2B1KkRqXutZj4-2F1uPvgLVdrF8kN0o5WLx4Zuj2F3VN9rIdMBpnYBXt07Wb4ed-2BD6t42mOgg3yqQRZtsihfwvNn3DeICBn2A52fKgaX0MrnZ46sbALsLYO4IXQ-2Bu-2BrUh5fa2MMfnB4raiIG6tBM3EA72caNQ5dosJ2fJKLSshd-2BJlPB5FIcQ75de2SBZJhqrnjqqSSBBA-3D-3D" style="text-decoration:none; color:#ffffff; padding-left:1px;" target="_blank">Portal Revenda</a></span></td>
+
+								</tr>
+							</tbody>
+						</table>
+						</td>
+					</tr>
+					<tr>
+						<td height="20"></td>
+					</tr>
+					<tr>
+						<td>
+						<table cellpadding="0" cellspacing="0" width="460">
+							<tbody>
+								<tr>
+									<td align="left"><span class="sg-image" data-imagelibrary="%7B%22width%22%3A%2295%22%2C%22height%22%3A%2231%22%2C%22alignment%22%3A%22%22%2C%22src%22%3A%22https%3A//marketing-image-production.s3.amazonaws.com/uploads/db86dba8e7509e5164c40bd3fd3cd996e06b9ea9351b03b84c710fad08ab988269b71ba12e28d2ed03f8797365da0676669b02c2e52281d8b42c8e9e67dce6cc.png%22%2C%22link%22%3A%22%22%2C%22classes%22%3A%7B%22sg-image%22%3A1%7D%2C%22alt_text%22%3A%22%22%7D"><a href="http://link.icarros.com.br/wf/click?upn=Bc-2B5VTzPecQpTN7rMxhq68hBojJWmgcb36T-2B0Lz4OESr2H-2BautDmJKvGXZAyQopFfNcUKNEtqQV532E5NrUcf4S2Gc5nZvU-2BF25B1UBMFavity3pscNL9bn-2Bwg0sJf4-2FH6-2FwkpR-2F130B39h3L97FNDx41wS4-2BBbM2VbvjrgFOF0K3LB3M4VKROLg7WQHKjwz2VegxIC-2BYCyiwQyeS87sXKLI1IZa629bcdLqQxxfZP2WhjLsJmpi2t2IszrQmZJT_dwauHgH0TP42By36sszv54JqkKsUPNS0H-2FG2OMZlVGGHAYqVGTqcbsxUmQPrI0xlL9VBXBXnaI6Cxiq-2B1KkRqb8Xfe5KADDlkK-2F7v6XTw5blxzl-2F9VS0-2B5pmKvtWrGwtPmMEx-2BRUD6n3BfYqjDQjP60ZvNa5WM9sCOY-2Fnykpvjycpw31ytZ1YlzhyTb3-2FVu8wHZTe8gzToce7YihcJ3LZd0v7cHM7XrNuhxEeo07phQ03X6MDpeVYGtAWpoqm7-2FD9kUnawVq0oBQfbA3n0tv-2BQ-3D-3D" target="_blank"><img border="0" height="31" src="https://marketing-image-production.s3.amazonaws.com/uploads/db86dba8e7509e5164c40bd3fd3cd996e06b9ea9351b03b84c710fad08ab988269b71ba12e28d2ed03f8797365da0676669b02c2e52281d8b42c8e9e67dce6cc.png" style="width: 95px; height: 31px;" width="95"></a></span></td>
+									<td align="right" style="vertical-align:middle"><span class="sg-image" data-imagelibrary="%7B%22width%22%3A%22111%22%2C%22height%22%3A%2224%22%2C%22alignment%22%3A%22%22%2C%22src%22%3A%22https%3A//marketing-image-production.s3.amazonaws.com/uploads/3b1c15576b2f62b175cacb6db4e0560332e32ba732d06524f9c59a86c0ba6b004b5aeed0efa33479ae399c5519589098ea74d4e796b1bc12ae460b4ca2e3d9ad.png%22%2C%22classes%22%3A%7B%22sg-image%22%3A1%7D%2C%22alt_text%22%3A%22%22%2C%22link%22%3A%22%22%7D"><img height="24" src="https://marketing-image-production.s3.amazonaws.com/uploads/3b1c15576b2f62b175cacb6db4e0560332e32ba732d06524f9c59a86c0ba6b004b5aeed0efa33479ae399c5519589098ea74d4e796b1bc12ae460b4ca2e3d9ad.png" style="width: 111px; height: 24px;" width="111"></span></td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+					</tr>
+					<tr>
+						<td height="20"></td>
+					</tr>
+					<tr>
+						<td align="left" style="line-height:10px;"><span style="font-family:'Open Sans', helvetica, arial, sans-serif; font-size:10px; color:#757575;">Imagens meramente ilustrativas.<br><br>Ficou com alguma dúvida? <a href="http://link.icarros.com.br/wf/click?upn=ae64a-2F8j5T7HAd-2BV4qIOivm9pe1m8Sj-2B7ZsYr8rV1Kwhe2318nWqFpCWo1xOvndh_dwauHgH0TP42By36sszv54JqkKsUPNS0H-2FG2OMZlVGGHAYqVGTqcbsxUmQPrI0xlL9VBXBXnaI6Cxiq-2B1KkRqV8e6a4hIf5AIY8xY7ad0LElZy51yQt6nYaCCMF115HrSRI93zFK3uYluvLLZ-2FcQLi-2F3zF9c-2BsRL4flDonH7kSvQZ4qtP9qpXZHY-2F-2BU4vr5WRgtdpQENvmKVRgPFVC0Jrf861i03lVxg26UBZFyvNNQgfLKARaaanoad45SXoakW32dr3nIDUN7cnJ2Iw80NSQ-3D-3D" style="color:#757575; font-family:'Open Sans', helvetica, arial, sans-serif; font-size:10px; color:#757575;" target="_blank">Clique aqui</a><br><br>E-mail: <a href="mailto:faleconosco@icarros.com.br?Subject=Olá iCarros" style="color:#757575; font-family:'Open Sans', helvetica, arial, sans-serif; font-size:10px; color:#757575;" target="_blank">faleconosco@icarros.com.br</a> (Atendimento de segunda a sexta feira, das 09h as 18h).<br><br>O iCarros respeita sua privacidade e não divulga seus dados. Você está recebendo esse e-mail porque marcou a opção de receber nossas ofertas e promoções.<br><br>iCarros LTDA | Av. Pres. Juscelino Kubitschek, 180 - 2º andar - Itaim Bibi - Cep: 04543-000 - São Paulo</span></td>
+					</tr>
+					<tr>
+						<td height="20" style="font-family:'Open Sans', helvetica, arial, sans-serif; font-size: 24px; line-height: 20px;"></td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<img src="http://link.icarros.com.br/wf/open?upn=dwauHgH0TP42By36sszv54JqkKsUPNS0H-2FG2OMZlVGGHAYqVGTqcbsxUmQPrI0xlL9VBXBXnaI6Cxiq-2B1KkRqTvT9M4rc9XNBVf6ljOV51wERxwb4vFdTBmkrvHla-2B4Guy1RYWC1pHh82S-2Fyw9vC76YeLnqWdBzKX83hlxjo28N-2BcJMQ7MHlMCrPS2A8XRMbsNK-2BQhnd1PPlX1RAhp6yvSekcbf7Ql8oAN8kvcPmvVNYMBOWq-2F5qA3-2B6OJHLnlhnZPRuVIhCaK8pLttdfh5qLeQKw25J08TVJZsuk6ZCJF4-3D" alt="" width="1" height="1" border="0" style="height:1px !important;width:1px !important;border-width:0 !important;margin-top:0 !important;margin-bottom:0 !important;margin-right:0 !important;margin-left:0 !important;padding-top:0 !important;padding-bottom:0 !important;padding-right:0 !important;padding-left:0 !important;">
+
+
+</p>
+                        <!-- /ko -->
+                       
+                    </div>
+                </div>

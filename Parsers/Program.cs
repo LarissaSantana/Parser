@@ -40,6 +40,89 @@ namespace Parsers
         }
         #endregion
 
+        #region ParserSamamHyundai
+        private void ParserSamamHyundai(out string nomeContato, out string telefone, out string email, out string titulo)
+        {
+            //GET NOME DO CLIENTE
+            nomeContato = "";
+            var indice = _email.IndexOf("De:</strong>");
+            var indiceNome = 0;
+            if (indice >= 0)
+            {
+                indice = _email.IndexOf("De:</strong>") + 12;
+                var spnIndex = _email.IndexOf("-", indice);
+                indiceNome = spnIndex;
+                nomeContato = _email.Substring(indice, ((spnIndex) - (indice))).Trim();
+            }
+
+            //GET TELEFONE
+            telefone = "";
+            indice = _email.IndexOf("Telefone:</strong>");
+            if (indice >= 0)
+            {
+                indice += 18;
+                var spnIndex = _email.IndexOf("D", indice);
+                if (spnIndex >= 0)
+                {
+                    telefone = _email.Substring(indice, ((spnIndex) - (indice))).Trim();
+                    telefone = Regex.Replace(telefone, @"\W+", "");
+                    if (telefone.Length > 14) telefone = ""; //Telefone inválido
+                }
+                else
+                {
+                    spnIndex = _email.IndexOf("<strong>", indice);
+                    telefone = _email.Substring(indice, (spnIndex - indice)).Trim();
+                    if (telefone.Length > 14) telefone = ""; //Telefone inválido
+                }
+            }
+
+            //GET EMAIL
+            email = "";
+            if (indiceNome >= 0)
+            {
+                indice = indiceNome + 1;
+                var indiceFim = _email.IndexOf("<strong>", indice);
+                email = _email.Substring(indice, (indiceFim - indice)).Trim();
+            }
+            string tipoSolicitacao()
+            {
+                //Nova <strong>solicitação de "Quero Comprar"</strong>
+                var index = _email.IndexOf("Nova <strong>");
+                index = _email.IndexOf(@"de " + "\"", index) + 4;
+                var indexFinal = _email.IndexOf("\"</strong>", index);
+                string tipo = _email.Substring(index, (indexFinal - index)).Trim();
+                return tipo;
+            }
+            //GetTitle
+            titulo = "";
+            var indiceProduto = _email.IndexOf($"interesse: </strong>");
+            var indiceHttp = _email.IndexOf("http://", indiceProduto);
+            var indexFim = _email.IndexOf("<strong>", indiceHttp);
+            if (indiceProduto >= 0)
+            {
+                if (indiceHttp > 0 && (indiceHttp < indexFim))
+                {
+                    if (tipoSolicitacao().ToLower().Equals(("Quero comprar").ToLower()))
+                    {
+                        indiceHttp += 7;
+                        indexFim = _email.IndexOf("<strong>", indiceHttp);
+                        indiceHttp = _email.IndexOf("?cars=") + 6;
+                        string veiculo = _email.Substring(indiceHttp, (indexFim - indiceHttp)).Trim();
+                        veiculo = veiculo.Replace("-", " ");
+                        titulo = ("\"Quero comprar\" - " + veiculo).ToUpper();
+                    }
+                }
+                else
+                {
+                    indiceProduto = _email.IndexOf("interesse: </strong>", indiceProduto) + 20;
+                    var endIndiceProduto = _email.IndexOf("<", indiceProduto);
+                    titulo = (_email.Substring(indiceProduto, endIndiceProduto - indiceProduto).Trim()).ToUpper();
+                }
+            }
+
+        }
+
+        #endregion
         #region ParseriCarros
         private void ParseriCarros(out string nomeContato, out string telefone, out string email, out string titulo, out decimal preco)
         {
@@ -167,8 +250,6 @@ namespace Parsers
             }
         }
         #endregion
-
-
         #region ParserNissan
         private void ParserNissanVentuno(out string nome, out string telefone, out string email, out string titulo)
         {
@@ -939,6 +1020,9 @@ namespace Parsers
                 case Parsers.SearchOpticsViamondo:
                     ParserSearchOpticsViamondo(out nomeContato, out telefone, out email);
                     break;
+                case Parsers.SamamHyundai:
+                    ParserSamamHyundai(out nomeContato, out telefone, out email, out titulo);
+                    break;
                 default:
                     break;
             }
@@ -971,6 +1055,7 @@ namespace Parsers
         Gmail,
         MeuCarroNovo,
         Nissan,
-        SearchOpticsViamondo
+        SearchOpticsViamondo,
+        SamamHyundai
     }
 }

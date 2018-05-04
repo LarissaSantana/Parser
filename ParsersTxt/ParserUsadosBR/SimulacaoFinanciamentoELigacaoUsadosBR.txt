@@ -1,0 +1,165 @@
+﻿
+<div class="modal-content" style="width:800px;">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h4 class="modal-title" data-bind="text: Lea_Titulo">Ligação :: UsadosBR</h4>
+                        <!-- ko if: Sta_Staging() && Sta_Staging().length > 0 && Sta_Staging()[0].Stp_StagingPart.length > 0 --><!-- /ko -->
+                    </div>
+                    <div class="modal-body">
+                        <audio controls="" data-bind="visible: Sta_Staging().length > 0" style="display: none;">
+                            <source id="playmp3" type="audio/mpeg" data-bind="attr: { src: $root.AudioUrl }">
+                            Your browser does not support the audio element.
+                        </audio>
+                        <!-- ko if: Lea_OrigemSecundaria() != null --><!-- /ko -->
+                        <!-- ko if: Lea_SubOrigem() != null --><!-- /ko -->                        
+                        <!-- ko if: Lea_Descricao -->
+                        <p data-bind="html: Lea_Descricao" id="emailBody">
+
+    
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+        <title>Carros usados em Goiânia, Brasília, Rio Preto e Campo Grande - UsadosBR</title>
+        <meta name="description" content="Classificados de carros usados e diversos veículos em Goiânia, Brasília, Rio Preto e Campo Grande, somos o maior classificado de veículos da região">
+        <meta name="keywords" content="carros, motos, novos, seminovos, usados, caminhoes, veiculos, classificados, goias, goiania, distrito federal, brasilia, campo grande, campo grande">
+
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    
+
+    
+        <table width="600px" style="width: 600px; margin:0 auto; background: #fff; border: thin solid #f9f8f4;  -webkit-box-shadow: 0px 0px 15px -2px rgba(0,0,0,0.05);
+-moz-box-shadow: 0px 0px 15px -2px rgba(0,0,0,0.05);
+box-shadow: 0px 0px 15px -2px rgba(0,0,0,0.05); font-family: 'Lato', Arial, sans-serif; margin-bottom: 30px;" align="center" cellpadding="0" cellspacing="0">
+            <tbody><tr>
+                <td align="center" style="padding: 35px 0;">
+                    <img src="cid:77a06471100e5decca8af5e20b380e1d@usadosbr.com" style="display:block; margin:0 auto;">
+                </td>
+            </tr>
+
+                <tr>
+        <td style="background: #00456d; padding: 30px 0;" align="center">
+            <p style="text-align: center; text-transform: uppercase; font-size: 24px; color: #fff; margin:0; font-weight: normal;">
+                Você recebeu uma ligação
+            </p>
+        </td>
+    </tr>
+    <tr>
+        <td style="padding:40px 45px 30px;">
+            <table width="100%" style="width: 100%;" cellpadding="0" cellspacing="0">
+                <tbody><tr>
+                    <td width="50px">
+                        <div style="width: 50px; height: 50px; overflow:hidden; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; display:inline-block;">
+                            <img src="cid:5bc85c33581187fc7c93278c5a5b1b46@usadosbr.com" width="50px" height="50px" style="width:50px; height: 50px; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%;">
+                        </div>
+                    </td>
+                    <td style="padding-left: 10px;">
+                        <p style="font-size: 14px; color: #153c64; text-transform: uppercase; font-weight: bold; margin:0;">
+                            Eric Barros
+                        </p>
+                        <p style="font-size: 14px; color: #153c64; text-transform: uppercase; font-weight: bold; margin:0;">
+                            (61) 99984-3688
+                        </p>
+                    </td>
+                    <td style="vertical-align: top;" width="115px">
+                        <p style="padding:1px 3px; color: #fff; background-color: #4ec046; font-size: 11px; display:inline-block; float: right; margin:0;">
+                                                            EM NEGOCIAÇÃO
+                                                    </p>
+                        <p style="font-weight: bold; color: #8f8f8f; font-size: 13px; margin-top: 5px; float: right;">
+                            25/04/2018 05:20
+                        </p>
+                    </td>
+                </tr>
+            </tbody></table>
+        </td>
+    </tr>
+    <tr>
+        <td style="padding:0 45px;">
+            <hr style="margin:0; border:0; border-top:thin solid #e9edf1;">
+        </td>
+    </tr>
+            <tr>
+            <td style="padding: 50px 45px 0; background-color: #f4f2ec;">
+                <table>
+                    <tbody><tr>
+                        <td vertical-align="top">
+                            <img src="https://www.usadosbr.com/cache/media/gallery/a9/99/28/d62a18b76d0f778351f83683e8b628d7-image-760x570-crop.jpg" style="display:block; margin:0;" width="266px" height="200px">
+                        </td>
+                        <td style="padding-left: 10px;">
+                            <p style="font-size: 14px; color: #00456d; text-decoration: underline; margin:0;">
+                                Cód. 623791
+                            </p>
+                            <p style=" text-transform: uppercase; font-size: 18px; color: #005ca1; margin:0; font-weight: bold; margin-bottom: 5px; margin-top: 5px;">
+                                FIAT TORO
+                            </p>
+                            <p style="text-transform: uppercase; font-size: 13px; color: #29a8e0; margin:0;  margin-bottom: 5px;">
+                                1.8  FREEDOM 16V Vermelho
+                            </p>
+                            <p style="font-size: 18px; color: #ff570d; font-weight: bold; margin:0; margin-bottom: 10px;">
+                                R$70.000,00
+                            </p>
+                            <ul style="list-style: none; padding:0; margin:0; font-size: 12px; color: #003d62; font-weight: bold;">
+                                <li style="margin-bottom: 3px;  background-image:url(https://www.usadosbr.com/assets/img/icone-calendario.png); background-position:0 center; background-repeat: no-repeat; padding:5px 0; padding-left: 25px;">
+                                    2017/2018
+                                </li>
+                                <li style="margin-bottom: 3px;  background-image:url(https://www.usadosbr.com/assets/img/icone-etiqueta.png); background-position:0 center; background-repeat: no-repeat; padding:5px 0; padding-left: 25px;">
+                                    FIAT
+                                </li>
+                                                                    <li style="margin-bottom: 3px;  background-image:url(https://www.usadosbr.com/assets/img/icone-bomba.png); background-position:0 center; background-repeat: no-repeat; padding:5px 0; padding-left: 25px;">
+                                        Á/G
+                                    </li>
+                                                                                                    <li style="margin-bottom: 3px;  background-image:url(https://www.usadosbr.com/assets/img/icone-cambio.png); background-position:0 center; background-repeat: no-repeat; padding:5px 0; padding-left: 25px;">
+                                        Automático
+                                    </li>
+                                                            </ul>
+                        </td>
+                    </tr>
+                </tbody></table>
+            </td>
+        </tr>
+        <tr>
+        <td align="center" style="padding: 30px 0; background-color: #f4f2ec;">
+            <a href="https://www.usadosbr.com/carros-e-utilitarios/fiat/toro/1-8-freedom-16v/2018-vermelho-brasilia-distrito-federal-339" style="color: #ff570d; font-size: 14px; padding: 10px; margin: 0 auto; display: block; width: 300px; text-decoration: none; border: thin solid #f84300; -webkit-border-radius:5px; -moz-border-radius: 5px; -ms-border-radius:5px; border-radius: 5px;">
+                Clique aqui para visualizar seu anúncio
+            </a>
+        </td>
+    </tr>
+    
+                        <tr>
+    <td align="center" style="padding: 0 0 45px;">
+        <hr style="width: 450px; border:0; border-top: thin solid #e9edf1; margin-top:0; margin-bottom: 20px;">
+        <p style="text-align:center; font-size: 14px; color: #464646; margin-bottom: 20px;">
+            Em caso de dúvida, fique à vontade para responder esse email <br>
+            ou nos contatar no <a href="mailto:sac@usadosbr.com" style="color: #1f61b4;">sac@usadosbr.com</a>
+        </p>
+       <a href="https://twitter.com/usadosbr" target="_blank" style="text-decoration: none;">
+            <img src="cid:7a559e724292ff9b7abe7e59ca41891e@usadosbr.com">
+        </a>
+        <a href="https://www.facebook.com/UsadosBR/" target="_blank" style="text-decoration: none;">
+            <img src="cid:5ab4b48d5c8849632b039b78d2386346@usadosbr.com">
+        </a>
+        <hr style="width: 30px; border:0; border-top: thin solid #e9edf1; margin-top:20px; margin-bottom: 20px;">
+        <img src="cid:983b6b9b76d28a43921c7e3a54262c3c@usadosbr.com" style="display: block; margin: 0 auto; margin-bottom: 20px;">
+        <a href="http://www.usadosbr.com/fale-conosco" target="_blank" style="font-size: 26px; color: #29a8e0; font-weight: 900; text-decoration: none; margin-bottom: 20px; display:block;">
+            FALE CONOSCO
+        </a>
+        <p style="font-size: 12px; color: #004a71; font-weight: bold; margin-bottom: 0px; margin-top:0;">
+            HORÁRIO DE ATENDIMENTO
+        </p>
+        <p style="font-size: 12px; color: #004a71; font-weight: normal; margin-top: 5px; margin-bottom:0;"> 
+            Segunda à Sexta - 08:00 às 18:00h
+        </p>
+    </td>
+</tr>
+        
+        </tbody></table>
+        <p style="text-align: center; color: #464646; font-size: 12px;">
+                        <small style="color:#7b7b7b; display:block; font-size: 12px; margin-top: 3px;">Copyright UsadosBR | Todos os direitos reservados</small>
+        </p>
+    
+
+</p>
+                        <!-- /ko -->
+                       
+                    </div>
+                </div>

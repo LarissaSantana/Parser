@@ -1,0 +1,16 @@
+
+<p data-bind="html: Lea_Descricao" id="emailBody">Nova <strong>solicitação de "Quero Comprar"</strong> no website da Sevel Veículos:
+
+<strong>Veículo de interesse: </strong>http://sevelveiculos.com.br/novo/?cars=hyundai-creta
+
+<strong>De:</strong> Ivens Teste - teste.connectlead@teste.com.br
+
+<strong>Telefone:</strong> 798888866666
+
+<strong>Corpo da mensagem:</strong>
+TESTE "QUERO COMPRAR!"
+
+
+--
+Este e-mail foi enviado de um formulário de contato em Sevel Veículos (http://sevelveiculos.com.br)
+</p>

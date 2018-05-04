@@ -1,0 +1,133 @@
+#region ParserUsadosBR
+        private void ParserUsadosBr(out string nomeContato, out string telefone, out string email, out string titulo, out decimal preco)
+        {
+            string telComMask = "";
+            //GET NOME DO CLIENTE
+            nomeContato = "";
+            var indice = _email.IndexOf("Nome:") + 4;
+            if (indice >= 5)
+            {
+                indice = _email.IndexOf("</b>", indice) + 4;
+                var spnIndex = _email.IndexOf("<", indice);
+                nomeContato = _email.Substring(indice, ((spnIndex) - (indice))).Trim();
+            }
+            else
+            {
+                indice = _email.IndexOf("bold;") + 7;
+                var spnIndex = _email.IndexOf("-", indice);
+                nomeContato = _email.Substring(indice, ((spnIndex) - (indice))).Trim();
+            }
+
+            string pattern = @"(?i)[^0-9a-záéíóúàèìòùâêîôûãõç\s]";
+            var rgx = new Regex(pattern);
+            nomeContato = rgx.Replace(nomeContato, "");
+
+            if (string.IsNullOrEmpty(nomeContato))
+            {
+                indice = _email.IndexOf("</strong>") + 9;
+                if (indice >= 9)
+                {
+                    var spnIndex = _email.IndexOf("<br>", indice);
+                    nomeContato = _email.Substring(indice, spnIndex - indice).Trim();
+                }
+            }
+
+            //GET TELEFONE
+            telefone = "";
+            indice = _email.IndexOf("Telefone:") + 9;
+            if (indice > 310)
+            {
+                indice = _email.IndexOf("</b>", indice) + 4;
+                var spnIndex = _email.IndexOf("<", indice);
+                telefone = _email.Substring(indice, ((spnIndex) - (indice))).Trim();
+                telefone = telefone.Replace("-", "").Replace("(", "").Replace(")", "").Replace(" ", "").Trim();
+                if (telefone.Length > 14) telefone = ""; //Telefone inválido
+            }
+            else
+            {
+                indice = _email.IndexOf("Telefone:") + 9;
+                var spnIndex = _email.IndexOf("</p>", indice);
+                telefone = _email.Substring(indice, ((spnIndex) - (indice))).Trim();
+                telefone = telefone.Replace("-", "").Replace("(", "").Replace(")", "").Replace(" ", "").Trim();
+                if (telefone.Length > 14) telefone = ""; //Telefone inválido
+            }
+            int x;
+            bool isNumber = int.TryParse(telefone, out x);
+            if (string.IsNullOrEmpty(telefone) || !isNumber)
+            {
+                indice = _email.IndexOf("Telefone:</strong>") + 18;
+                if (indice > 18)
+                {
+                    var spnIndex = _email.IndexOf("<br>", indice);
+                    telefone = _email.Substring(indice, spnIndex - indice).Trim();
+                    telComMask = telefone;
+                    telefone = telefone.Replace("-", "").Replace("(", "").Replace(")", "").Replace(" ", "").Trim();
+                    if (telefone.Length > 14) telefone = ""; //Telefone inválido
+                }
+            }
+
+            //GET EMAIL
+            email = "";
+            indice = _email.IndexOf("E-mail:") + 7;
+            if (indice >= 8)
+            {
+                indice = _email.IndexOf("</b>", indice) + 4;
+                var spnIndex = _email.IndexOf("<", indice);
+                email = _email.Substring(indice, ((spnIndex) - (indice))).Trim();
+            }
+            else if ((_email.IndexOf(nomeContato) + nomeContato.Length + 3) < 400)
+            {
+                indice = _email.IndexOf(nomeContato) + nomeContato.Length + 3;
+                var spnIndex = _email.IndexOf("<br>", indice);
+                email = _email.Substring(indice, ((spnIndex) - (indice))).Trim();
+            }
+            else
+            {
+                string[] emailValid = email.Split(' ');
+                if (string.IsNullOrEmpty(email) || emailValid.Length > 1)
+                {
+                    indice = _email.IndexOf("Email:</strong>") + 15;
+                    if (indice > 15)
+                    {
+                        var spnIndex = _email.IndexOf("<br>", indice);
+                        email = _email.Substring(indice, spnIndex - indice).Trim();
+                    }
+                }
+            }
+
+            //GetTitle
+            titulo = "";
+            var indiceProduto = _email.IndexOf("Placa:");
+            if (indiceProduto >= 0)
+            {
+                indiceProduto = _email.IndexOf("<b>", indiceProduto) + 3;
+                var endIndiceProduto = _email.IndexOf("</b>", indiceProduto);
+                titulo = _email.Substring(indiceProduto, endIndiceProduto - indiceProduto).Trim();
+            }
+            else if ((_email.IndexOf("sobre o") + 7) > 400)
+            {
+                indiceProduto = _email.IndexOf("sobre o") + 7;
+                var endIndiceProduto = _email.IndexOf(",", indiceProduto);
+                titulo = _email.Substring(indiceProduto, endIndiceProduto - indiceProduto).Trim();
+            }
+            else
+            {
+                titulo = nomeContato;
+                var contato = telefone != null && telefone.Length > 0 ? telComMask : email;
+                titulo += " - " + contato;
+            }
+
+            //GetPrice
+            preco = 0;
+            indice = _email.IndexOf("R$") + 2;
+            if (indice > 500)
+            {
+                var spnIndex = _email.IndexOf(". Obrigado", indice);
+                if (spnIndex > 0)
+                {
+                    var _preco = _email.Substring(indice, spnIndex - indice).Trim();
+                    Decimal.TryParse(_preco, out preco);
+                }
+            }
+        }
+        #endregion
