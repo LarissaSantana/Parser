@@ -1,0 +1,298 @@
+<div class="modal-content" style="width: 633.984px;">
+                            <div class="modal-header">
+                                <!-- ko if: Sta_Staging() && Sta_Staging().length > 0 && Sta_Staging()[0].Stp_StagingPart.length > 0 --><!-- /ko -->
+                                <button type="button" class="close" data-bind="click:function(){$('#ModalDescricao_Converter').modal('hide');}" aria-hidden="true">×</button>
+                            </div>
+                            <div class="modal-body">
+                                <!-- ko if: Sta_Staging() == null || Sta_Staging().length == 0 -->
+                                <p data-bind="html: Lea_Descricao">
+
+   <meta content="text/html; charset=UTF-8" http-equiv="content-type" style=""><!-- utf-8 works for most cases -->
+   <meta content="width=device-width" name="viewport" style=""><!-- Forcing initial-scale shouldn't be necessary -->
+   <meta content="IE=edge" http-equiv="X-UA-Compatible" style=""><!-- Use the latest (edge) version of IE rendering engine -->
+   <meta content="" name="x-apple-disable-message-reformatting" style=""><!-- Disable auto-scale in iOS 10 Mail entirely -->
+   <title style="">Meu Carro Novo</title>
+   <!-- The title tag shows in email notifications, like Android 4.4. --><!-- Web Font / @font-face : BEGIN --><!-- NOTE: If web fonts are not required, lines 9 - 26 can be safely removed. --><!-- Desktop Outlook chokes on web font references and defaults to Times New Roman, so we force a safe fallback font. --><!--[if mso]>
+<style>#emailBody 
+* {
+font-family: sans-serif !important;
+} #emailBody 
+</style>
+<![endif]--><!-- CSS Reset -->
+   <style type="text/css" style="">#emailBody /* What it does: Remove spaces around the email design added by some email clients. */
+      /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+      html,
+      body {
+        margin: 0 auto !important;
+        padding: 0 !important;
+        height: 100% !important;
+        width: 100% !important;
+      } #emailBody 
+      /* What it does: Stops email clients resizing small text. */
+     #emailBody{
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+      } #emailBody 
+      /* What is does: Centers email on Android 4.4 */
+      div[style*="margin: 16px 0"] {
+        margin:0 !important;
+      } #emailBody 
+      /* What it does: Stops Outlook from adding extra spacing to tables. */
+      table,
+      td {
+        mso-table-lspace: 0pt !important;
+        mso-table-rspace: 0pt !important;
+      } #emailBody 
+      /* What it does: Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
+      table {
+        border-spacing: 0 !important;
+        border-collapse: collapse !important;
+        table-layout: fixed !important;
+        margin: 0 auto !important;
+      } #emailBody 
+      table table table {
+        table-layout: auto;
+      } #emailBody 
+      /* What it does: Uses a better rendering method when resizing images in IE. */
+      img {
+        -ms-interpolation-mode:bicubic;
+      } #emailBody 
+      /* What it does: A work-around for iOS meddling in triggered links. */
+      .mobile-link--footer a,
+      a[x-apple-data-detectors] {
+        color:inherit !important;
+        text-decoration: underline !important;
+      } #emailBody 
+   </style>
+   <!-- Progressive Enhancements -->
+   <style type="text/css" style="">#emailBody /* What it does: Hover styles for buttons */
+      .button-td,
+      .button-a {
+        transition: all 100ms ease-in;
+      } #emailBody 
+      .button-td:hover,
+      .button-a:hover {
+        background: #7c7c7b !important;
+        border-color: #7c7c7b !important;
+      } #emailBody 
+      /* Media Queries */
+      @media screen and (max-width: 600px) {
+        .email-container {
+          width: 100% !important;
+          margin: auto !important;
+          padding: 0 !important;
+        } #emailBody 
+        /* What it does: Forces elements to resize to the full width of their container. Useful for resizing images beyond their max-width. */
+        .fluid {
+          max-width: 100% !important;
+          height: auto !important;
+          margin-left: auto !important;
+          margin-right: auto !important;
+        } #emailBody 
+        /* What it does: Forces table cells into full-width rows. */
+        .stack-column,
+        .stack-column-center {
+          display: block !important;
+          width: 100% !important;
+          max-width: 100% !important;
+          direction: ltr !important;
+        } #emailBody 
+        /* And center justify these ones. */
+        .stack-column-center {
+          text-align: center !important;
+        } #emailBody 
+        /* What it does: Generic utility class for centering. Useful for images, buttons, and nested tables. */
+        .center-on-narrow {
+          text-align: center !important;
+          display: block !important;
+          margin-left: auto !important;
+          margin-right: auto !important;
+          float: none !important;
+        } #emailBody 
+        table.center-on-narrow {
+          display: inline-block !important;
+        } #emailBody 
+      } #emailBody 
+      .visible {
+        display: none !important;
+      } #emailBody 
+      @media only screen and (max-width: 480px){
+        .visible{
+          display: block !important;
+        } #emailBody 
+        .hidden {
+          display: none !important;
+        } #emailBody 
+      } #emailBody 
+   </style>
+
+
+<center style="width: 100%; background: #fff;"><!-- Email Body : BEGIN -->
+<table align="center" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" class="dasheBorder" width="600">
+   <tbody style="">
+      <tr style="">
+         <td align="center" height="30" width="600"><font style="color:#444444;font-size:12px;font-family:Arial,Tahoma,sans-serif;">Fácil de comprar porque é fácil de vender </font></td>
+      </tr>
+      <tr style="">
+         <td>
+         <table align="center" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="600">
+            <tbody style="">
+               <tr style="">
+                  <td align="left" height="20" width="250"><font style="color:#444444;font-size:11px;font-family:Arial,Tahoma,sans-serif;"><a href="http://contato.meucarronovo.com.br/pub/cc?_ri_=X0Gzc2X%3DYQpglLjHJlTQGzb3fzdfXan5NIRLtDFjMezczbaG4zdzezfHzaTGplRvC4zgDTT0ozfRVXtpKX%3DUSCT&amp;_ei_=ErnQDUJqol-3oWC5as2NfyZByVxVtkZsPulzI53sbvu7cX0crz57cmmTRgzxN9bs27u_whOQZYBHi-s9j19FQfJL05M05R5aT1MQaukNQtzDQo5cAyy07JG0W86taaciuhEl3_tq2TgktDkHiSy7DBOzUdabTpLh49g1P9Uspv2N2sLi7cwCs0NkHvLSY92ZDXO564mLtzYZbbazqCJvx9Q75_7rbStSw3eNFluGyUGAzYvlnnSKsIeYwSLNzQ6zQIoVcd_P4hNZhcLmm10ln4-rAviKiGEpXy7kgYeGAJ9xPUV9SohGUCLzGLQ9csfeHib65FaOIVAHcRUt5a0YkCc-nTNquQuHTg22JYZxU6udptlX-Qf3ZWsJKtFfrJxS9m1hcOxJADLv8YH0Pk0WXgH2jio-NExde_Qol0onaA2SV5RiABPZGGTmgpvEFkmi1PIVtNoWCRw4Gpl4XnanqolexL9devcKxKhrxBhe6LlXbV2pBggnK-65rJXRsJjHIHwkt1Ugh8vVA2blcfrF4K0ycWhsBfFcSyoJ5Kd8jVVQhyED_G63C30KTnZUE1c2gTDTXEmFCsnSMmSbzbR-u1MElmR31OYI2l5stfPA0WqVABlBTsvRv2RFMAjCAo-lrL_NVJ6ej3gQBkFIY82mviqv61Eyp_IrPNsJGN_J1bfnLWLf_V0zszg3kcsNntTfCuh9FLZmJQomI3Bu0oGzo7sH_gywTbRyZYqNfP2wDcQEe25FuSdDzmsFa2QC18HZdZZmGa_yLor5mx4psPchrtwXyFvkvlI1EmjzMlIuHwNq1-GjeTaTjRnTpa3NMMpRJBW69ZTI555qcsBov6ABqsXsoR5KCIBOwQj_wcLwD5rFICAWxoNk8YykxWeUAmsDx4U1HN6dxTFvGLK_lw." style="color:#0000ff;" target="_blank" title="esse link">Versão Online</a> </font></td>
+                  <td align="right" height="20" width="350"><font style="color:#444444;font-size:11px;font-family:Arial,Tahoma,sans-serif;">Adicione <a href="mailto:relacionamento@meucarronovo.com.br" target="_blank">info@contato.meucarronovo.com.br</a> ao seus contatos </font></td>
+               </tr>
+            </tbody>
+         </table>
+         </td>
+      </tr>
+   </tbody>
+</table>
+
+<table align="center" border="0" cellpadding="0" cellspacing="0" class="email-container" style="margin: auto;border:1px solid #eeeeee;" width="600"><!-- Hero Image, Flush : BEGIN -->
+   <tbody style="">
+      <tr style="">
+         <td align="center" bgcolor="#f9f9f9" style="padding:20px"><img alt="Meu Carro Novo" border="0" class="center-on-narrow" height="40" src="http://static.cdn.responsys.net/i2/responsysimages/meucarro/contentlibrary/campaigns/auto_prosposta_loja_sem_pap/img/logo-meucarronovo.jpg" style="height: auto; font-family: sans-serif; mso-height-rule: exactly; border:none;" width="229"></td>
+      </tr>
+      <tr style="">
+         <td align="center" bgcolor="#ffffff"><img alt="Meu Carro Novo" border="0" class="fluid" height="320" src="http://static.cdn.responsys.net/i2/responsysimages/meucarro/contentlibrary/campaigns/auto_prosposta_loja_sem_pap/img/banner.jpg" style="width: 100%; max-width: 598px; height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #7c7c7b;border:none;" width="598"></td>
+      </tr>
+      <!-- Hero Image, Flush : END --><!-- 1 Column Text + Button : BEGIN -->
+      <tr style="">
+         <td bgcolor="#ffffff" style=" padding: 35px">
+         <table border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tbody style="">
+               <tr style="">
+                  <td style="border:3px solid #ffcd00; font-family: sans-serif; mso-height-rule: exactly;">
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                     <tbody style="">
+                        <tr style="">
+                           <td style="font-family: sans-serif; font-size: 24px; text-align:center; mso-height-rule: exactly; line-height: 30px; color: #414141;padding:25px 35px 20px"><strong style="color:#ffc000">Você recebeu uma proposta para um</strong><br>
+                           anúncio de veículo no MeuCarroNovo.</td>
+                        </tr>
+                        <tr style="">
+                           <td style="background:#ffcd00;font-family: sans-serif; font-size: 24px; text-align:center; mso-height-rule: exactly; line-height: 30px; color: #414141;padding:30px 35px">
+                           <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                              <tbody style="">
+                                 <tr style=""><!-- Column : BEGIN -->
+                                    <td class="stack-column-center" width="50%">
+                                    <table align="left" border="0" cellpadding="0" cellspacing="0">
+                                       <tbody style="">
+                                          <tr style="">
+                                             <td dir="ltr" style="max-width:204px;" valign="top" width="204"><a href="http://contato.meucarronovo.com.br/pub/cc?_ri_=X0Gzc2X%3DYQpglLjHJlTQGzb3fzdfXan5NIRLtDFjMezczbaG4zdzezfHzaTGplRvC4zgDTT0ozfRVXtpKX%3DSYAT&amp;_ei_=Eq2tf9zs59idfPO1Sc_9BbliNbhQVnDsqgiziTkxHugmIYJz2XlyALSynwFpDOoXkVrDkXIyJ49I2uzcBI5dIPJa_YRt9ZZxIgInRYSeIju8IzftrlnOPpWMya16FJW2Os-7mK0rckxhfLxwOenAh9kM-gBhD2g4VYyohZSeNaaImTZn7Ol8A_YeuZaOpSNp7WtdfH2hU_LNjm4brGeUsu0HgceCPVFB5JEpKqsXHeQ0G0."><img alt="FIAT MOBI EASY 1.0 FIRE FLEX 5P." border="0" class="center-on-narrow" height="149" src="https://d1x1xhcjqq6e69.cloudfront.net/fotos/r/1013605/v/9098289/2BtPBR2noAJ.jpg" style="height: auto;display:block;" width="204"> </a>
+                                             <p style="margin:0 0 0 0;background:#414141;font-family: sans-serif; font-size: 20px; color: #ffffff;font-weight:bold; text-align:center; padding:5px 0;mso-height-rule: exactly;">R$ 29.990,00
+                                             </p>
+                                             </td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                    </td>
+                                    <!-- Column : END --><!-- Column : BEGIN -->
+                                    <td class="stack-column-center" width="50%">
+                                    <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                       <tbody style="">
+                                          <tr style="">
+                                             <td class="center-on-narrow" dir="ltr" style="font-family: sans-serif; font-size: 14px; mso-height-rule: exactly; line-height: 20px; color: #414141; text-align: left;padding:0 0 0 0;" valign="top">
+                                             <p style="font-family: sans-serif; font-weight:bold; font-size: 18px;text-transform:uppercase;margin:0 0 15px 0;"><br class="visible">
+                                             FIAT MOBI EASY 1.0 FIRE FLEX 5P.
+                                             </p>
+                                             Ano: <strong>2017</strong><br>
+                                             Modelo: <strong>MOBI EASY 1.0 FIRE FLEX 5P.</strong><br>
+                                             Cor: <strong>VERMELHO</strong><br>
+                                             Portas: <strong>4</strong><br>
+                                             Combustível <strong>FLEX</strong><br>
+                                             Câmbio: <strong>Manual</strong><br>
+                                             Placa: <strong></strong></td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                    </td>
+                                    <!-- Column : END -->
+                                 </tr>
+                              </tbody>
+                           </table>
+                           </td>
+                        </tr>
+                        <tr style="">
+                           <td style="font-family: sans-serif; font-size: 16px; text-align:left; mso-height-rule: exactly; line-height: 26px; color: #414141;padding:25px 35px">
+                           <p style="margin:0 0 20px 0;font-family: sans-serif;font-size:18px;font-weight:bold;text-align:center">Veja a mensagem do cliente:
+                           </p>
+                           <strong>larissaaaaaa<br>
+                           35988853217<br>
+                           leaoereis@hotmail.com</strong>
+
+                           <p>Qual valor com o cartão de produtor rural?<br>
+                           <br>
+                           <strong>Veículo na Troca: Sim</strong>
+                           </p>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </td>
+               </tr>
+            </tbody>
+         </table>
+         </td>
+      </tr>
+      <!-- 1 Column Text : END --><!-- 1 Column Text : BEGIN -->
+      <tr style="">
+         <td bgcolor="#e5e5e5" style="padding: 35px;">
+         <table border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tbody style="">
+               <tr style="">
+                  <td class="center-on-narrow" dir="ltr" style="font-family:Arial, sans-serif; font-size: 18px; mso-height-rule: exactly; line-height:24px; text-align:center; color: #414141; border:3px solid #9e092e;padding: 20px 35px;" valign="top">Aproveite essa <strong>oportunidade para entrar em contato</strong> e fechar o negócio.<br class="visible">
+                  <strong style="color:#9e092e">Boa venda.</strong></td>
+               </tr>
+            </tbody>
+         </table>
+         </td>
+      </tr>
+      <!-- 1 Column Text : END --><!-- Thumbnail Right, Text Left : BEGIN -->
+      <tr style="">
+         <td align="center" bgcolor="#ffffff" dir="rtl" style="padding: 35px;" valign="top" width="100%">
+         <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tbody style="">
+               <tr style=""><!-- Column : BEGIN -->
+                  <td class="stack-column-center" width="25%">
+                  <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                     <tbody style="">
+                        <tr style="">
+                           <td dir="ltr" style="padding: 0 10px 10px; text-align:right" valign="top"><img alt="alt_text" border="0" class="center-on-narrow" height="104" src="http://static.cdn.responsys.net/i2/responsysimages/meucarro/contentlibrary/campaigns/auto_prosposta_loja_sem_pap/img/logo-bv.jpg" style="height: auto; background: #ffffff; font-family: sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #7c7c7b;" width="89"></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </td>
+                  <!-- Column : END --><!-- Column : BEGIN -->
+                  <td class="stack-column-center" width="75%">
+                  <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                     <tbody style="">
+                        <tr style="">
+                           <td class="center-on-narrow" dir="ltr" style="font-family:Arial, sans-serif; font-size: 10px; mso-height-rule: exactly; line-height: 16px; color: #414141; text-align: left;" valign="top">Créditos e condições sujeitos a análise. Informe-se sobre o CET antes de contratar o seu empréstimo/financiamento. Use o crédito de forma consciente. Sugestões, cancelamentos, elogios, reclamações ou informações gerais de produtos e serviços, contato o SAC - informações, reclamações, cancelamentos ou elogios: 08<span style="white-space: nowrap;"></span>00 7<span style="white-space: nowrap;"></span>70 33<span style="white-space: nowrap;"></span>35 ou 08<span style="white-space: nowrap;"></span>00 70<span style="white-space: nowrap;"></span>1 86<span style="white-space: nowrap;"></span>61 (deficientes auditivos e de fala). Ouvidoria de seg. a sex., das 9h às 18h: 08<span style="white-space: nowrap;"></span>00 70<span style="white-space: nowrap;"></span>7 00<span style="white-space: nowrap;"></span>83 ou 08<span style="white-space: nowrap;"></span>00 70<span style="white-space: nowrap;"></span>1 86<span style="white-space: nowrap;"></span>61 (deficientes auditivos e de fala). Exceto feriados nacionais.</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </td>
+                  <!-- Column : END -->
+               </tr>
+            </tbody>
+         </table>
+         </td>
+      </tr>
+      <!-- Thumbnail Right, Text Left : END -->
+   </tbody>
+</table>
+<!-- Email Body : END --></center><table cellpadding="0" cellspacing="0" style="border: 0px; padding: 0px; margin: 0px; position: absolute; display: none; float: left;">
+<tbody style=""><tr style="">
+<td height="1" style="font-size: 1px; line-height: 1px; padding: 0px;">
+<br><img height="1" width="1" style="padding: 0px 0px; !important; margin: 0px 0px; font-size: 1px; line-height: 1px;" src="http://contato.meucarronovo.com.br/pub/as?_ri_=X0Gzc2X%3DYQpglLjHJlTQGzb3fzdfXan5NIRLtDFjMezczbaG4zdzezfHzaTGplRvC4zgDTT0ozfRVXHkMX%3Dw&amp;_ei_=EolaGGF4SNMvxFF7KucKuWObWcqwiuOOPnd6M8namawrcZQfNaaDGnfBv9M5_ml15i0_MXJeHjr_3aJDaFoRWv_e_sJOaaVKdcO2sJN0mkeDq0wxtKA5VttfNym8WiQ.">
+</td>
+</tr>
+</tbody></table>
+
+
+
+</p>
+                                <!-- /ko -->
+                                <!-- ko if: Sta_Staging() && Sta_Staging().length > 0 && Sta_Staging()[0].Stp_StagingPart.length > 0 --><!-- /ko -->
+                            </div>
+                        </div>

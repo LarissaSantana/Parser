@@ -1,0 +1,306 @@
+
+<div class="modal-content" style="width:800px;">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h4 class="modal-title" data-bind="text: Lea_Titulo">Atenção: Chegou uma proposta para  - Sentra S 2.0 Flexstart 16v Aut.</h4>
+                        <!-- ko if: Sta_Staging() && Sta_Staging().length > 0 && Sta_Staging()[0].Stp_StagingPart.length > 0 --><!-- /ko -->
+                    </div>
+                    <div class="modal-body">
+                        <audio controls="" data-bind="visible: Sta_Staging().length > 0" style="display: none;">
+                            <source id="playmp3" type="audio/mpeg" data-bind="attr: { src: $root.AudioUrl }">
+                            Your browser does not support the audio element.
+                        </audio>
+                        <!-- ko if: Lea_OrigemSecundaria() != null --><!-- /ko -->
+                        <!-- ko if: Lea_SubOrigem() != null --><!-- /ko -->                        
+                        <!-- ko if: Lea_Descricao -->
+                        <p data-bind="html: Lea_Descricao" id="emailBody">
+
+   <meta content="text/html; charset=UTF-8" http-equiv="content-type"><!-- utf-8 works for most cases -->
+   <meta content="width=device-width" name="viewport"><!-- Forcing initial-scale shouldn't be necessary -->
+   <meta content="IE=edge" http-equiv="X-UA-Compatible"><!-- Use the latest (edge) version of IE rendering engine -->
+   <meta content="" name="x-apple-disable-message-reformatting"><!-- Disable auto-scale in iOS 10 Mail entirely -->
+   <title>Meu Carro Novo</title>
+   <!-- The title tag shows in email notifications, like Android 4.4. --><!-- Web Font / @font-face : BEGIN --><!-- NOTE: If web fonts are not required, lines 9 - 26 can be safely removed. --><!-- Desktop Outlook chokes on web font references and defaults to Times New Roman, so we force a safe fallback font. --><!--[if mso]>
+<style>#emailBody 
+* {
+font-family: sans-serif !important;
+} #emailBody 
+</style>
+<![endif]--><!-- CSS Reset -->
+   <style type="text/css">#emailBody /* What it does: Remove spaces around the email design added by some email clients. */
+      /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+      html,
+      body {
+        margin: 0 auto !important;
+        padding: 0 !important;
+        height: 100% !important;
+        width: 100% !important;
+      } #emailBody 
+      /* What it does: Stops email clients resizing small text. */
+     #emailBody{
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+      } #emailBody 
+      /* What is does: Centers email on Android 4.4 */
+      div[style*="margin: 16px 0"] {
+        margin:0 !important;
+      } #emailBody 
+      /* What it does: Stops Outlook from adding extra spacing to tables. */
+      table,
+      td {
+        mso-table-lspace: 0pt !important;
+        mso-table-rspace: 0pt !important;
+      } #emailBody 
+      /* What it does: Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
+      table {
+        border-spacing: 0 !important;
+        border-collapse: collapse !important;
+        table-layout: fixed !important;
+        margin: 0 auto !important;
+      } #emailBody 
+      table table table {
+        table-layout: auto;
+      } #emailBody 
+      /* What it does: Uses a better rendering method when resizing images in IE. */
+      img {
+        -ms-interpolation-mode:bicubic;
+      } #emailBody 
+      /* What it does: A work-around for iOS meddling in triggered links. */
+      .mobile-link--footer a,
+      a[x-apple-data-detectors] {
+        color:inherit !important;
+        text-decoration: underline !important;
+      } #emailBody 
+   </style>
+   <!-- Progressive Enhancements -->
+   <style type="text/css">#emailBody /* What it does: Hover styles for buttons */
+      .button-td,
+      .button-a {
+        transition: all 100ms ease-in;
+      } #emailBody 
+      .button-td:hover,
+      .button-a:hover {
+        background: #7c7c7b !important;
+        border-color: #7c7c7b !important;
+      } #emailBody 
+      /* Media Queries */
+      @media screen and (max-width: 600px) {
+        .email-container {
+          width: 100% !important;
+          margin: auto !important;
+          padding: 0 !important;
+        } #emailBody 
+        /* What it does: Forces elements to resize to the full width of their container. Useful for resizing images beyond their max-width. */
+        .fluid {
+          max-width: 100% !important;
+          height: auto !important;
+          margin-left: auto !important;
+          margin-right: auto !important;
+        } #emailBody 
+        /* What it does: Forces table cells into full-width rows. */
+        .stack-column,
+        .stack-column-center {
+          display: block !important;
+          width: 100% !important;
+          max-width: 100% !important;
+          direction: ltr !important;
+        } #emailBody 
+        /* And center justify these ones. */
+        .stack-column-center {
+          text-align: center !important;
+        } #emailBody 
+        /* What it does: Generic utility class for centering. Useful for images, buttons, and nested tables. */
+        .center-on-narrow {
+          text-align: center !important;
+          display: block !important;
+          margin-left: auto !important;
+          margin-right: auto !important;
+          float: none !important;
+        } #emailBody 
+        table.center-on-narrow {
+          display: inline-block !important;
+        } #emailBody 
+      } #emailBody 
+      .visible {
+        display: none !important;
+      } #emailBody 
+      @media only screen and (max-width: 480px){
+        .visible{
+          display: block !important;
+        } #emailBody 
+        .hidden {
+          display: none !important;
+        } #emailBody 
+      } #emailBody 
+   </style>
+
+
+<center style="width: 100%; background: #fff;"><!-- Email Body : BEGIN -->
+<table align="center" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" class="dasheBorder" width="600">
+   <tbody>
+      <tr>
+         <td align="center" height="30" width="600"><font style="color:#444444;font-size:12px;font-family:Arial,Tahoma,sans-serif;">Fácil de comprar porque é fácil de vender </font></td>
+      </tr>
+      <tr>
+         <td>
+         <table align="center" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="600">
+            <tbody>
+               <tr>
+                  <td align="left" height="20" width="250"><font style="color:#444444;font-size:11px;font-family:Arial,Tahoma,sans-serif;"><a href="http://contato.meucarronovo.com.br/pub/cc?_ri_=X0Gzc2X%3DYQpglLjHJlTQGgJ4hOKEb8rozeHebizftXMh7KMdEbMIWEf4iuWoNrRyXeKnVXtpKX%3DUSCT&amp;_ei_=ErnQDUJqol-3oWC5as2Nfy-1lgAzRTzlz1Rgv_QfiHf4nIvbwDUp_xvh_8UtckDIVlEQcldFvvKqIznzB3n20HPX400AoniGuUAO27qASfe3mAjE_pfvnvsKmMoLXMoJHQgoigUqa5b_nAmjtwCW3lq6krGt8SoybkderJ7JY2Ro4asisN8XPJdlIHTJhsDNFP75JSodhIDIb26RDtjkY7l1IntV84q_ZYkz3DSZlxhYj1q_n3Vugu0n8eM561FMKqsKtcR1PYi3qLDtG_SS1S0x9-D49qCEmOKuDnVpaLHZ3EQ9Fn2z-KbX53vj69SKVodxz0CBdBREpkNcSgfVvdiFxS9swBDMfkd_gLnYLsUoQcGSbzoJozsUqfuaTIaM0E5p1Fx-8tk5vT4hGx_lmoqhvMLElAM7FZ6Drb_AkAXIFe_E4mhKcVv8ItWK9ACswCt4UJUSLX1o4JTrAwcRXnebSDz4tM5Cvk9Aa_Co5moN-VpF2B4MMAd4kJqJs-ja__f3wMOexR6ceHyFJ21W-0nrSKr7y-YZHS1j8aAN36LClqqWkoLHCKPwgroJTbU3OI4zv8RP0lFyGKxIv5DcAZYWUxeAxgHye4L9TSBXfQtoAgNMOM1FbJR74ZKCdg32MxM7W-Ou9qkK41LN3rWdkReATeKl29VDPB0fbnNjkRJwNeOAROx5Lo5rAgLWOiq52YE8CJMdYGUxpTDpRNO5_P5oZd9D59y1Gp05ZtsB6rsHHg237imFGg9PiHUxG9G0p6fh7Pd7JbRzOAwlM3LWjRa19mr1-ONHJ875RUf073un_eachGXyBGuPrt9fAKU50Q2KjucrMhvyKzbm0IJkg1I1MiAtJ6NvJ4FiVjZyZDqgtkx6XaWDkCllzWqC_hC-JgUQF6RIRdfSM5B1RUjhmH5fPWvA-Vm3TRBYV6QRsiNO_q_NlTKYyOF-dM." style="color:#0000ff;" target="_blank" title="esse link">Versão Online</a> </font></td>
+                  <td align="right" height="20" width="350"><font style="color:#444444;font-size:11px;font-family:Arial,Tahoma,sans-serif;">Adicione <a href="mailto:relacionamento@meucarronovo.com.br" target="_blank">info@contato.meucarronovo.com.br</a> ao seus contatos </font></td>
+               </tr>
+            </tbody>
+         </table>
+         </td>
+      </tr>
+   </tbody>
+</table>
+
+<table align="center" border="0" cellpadding="0" cellspacing="0" class="email-container" style="margin: auto;border:1px solid #eeeeee;" width="600"><!-- Hero Image, Flush : BEGIN -->
+   <tbody>
+      <tr>
+         <td align="center" bgcolor="#f9f9f9" style="padding:20px"><img alt="Meu Carro Novo" border="0" class="center-on-narrow" height="40" src="http://static.cdn.responsys.net/i2/responsysimages/meucarro/contentlibrary/campaigns/auto_prosposta_loja_sem_pap/img/logo-meucarronovo.jpg" style="height: auto; font-family: sans-serif; mso-height-rule: exactly; border:none;" width="229"></td>
+      </tr>
+      <tr>
+         <td align="center" bgcolor="#ffffff"><img alt="Meu Carro Novo" border="0" class="fluid" height="320" src="http://static.cdn.responsys.net/i2/responsysimages/meucarro/contentlibrary/campaigns/auto_prosposta_loja_sem_pap/img/banner.jpg" style="width: 100%; max-width: 598px; height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #7c7c7b;border:none;" width="598"></td>
+      </tr>
+      <!-- Hero Image, Flush : END --><!-- 1 Column Text + Button : BEGIN -->
+      <tr>
+         <td bgcolor="#ffffff" style=" padding: 35px">
+         <table border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tbody>
+               <tr>
+                  <td style="border:3px solid #ffcd00; font-family: sans-serif; mso-height-rule: exactly;">
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                     <tbody>
+                        <tr>
+                           <td style="font-family: sans-serif; font-size: 24px; text-align:center; mso-height-rule: exactly; line-height: 30px; color: #414141;padding:25px 35px 20px"><strong style="color:#ffc000">Você recebeu uma proposta para um</strong><br>
+                           anúncio de veículo no MeuCarroNovo.</td>
+                        </tr>
+                        <tr>
+                           <td style="background:#ffcd00;font-family: sans-serif; font-size: 24px; text-align:center; mso-height-rule: exactly; line-height: 30px; color: #414141;padding:30px 35px">
+                           <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                              <tbody>
+                                 <tr><!-- Column : BEGIN -->
+                                    <td class="stack-column-center" width="50%">
+                                    <table align="left" border="0" cellpadding="0" cellspacing="0">
+                                       <tbody>
+                                          <tr>
+                                             <td dir="ltr" style="max-width:204px;" valign="top" width="204"><a href="http://contato.meucarronovo.com.br/pub/cc?_ri_=X0Gzc2X%3DYQpglLjHJlTQGgJ4hOKEb8rozeHebizftXMh7KMdEbMIWEf4iuWoNrRyXeKnVXtpKX%3DSYAT&amp;_ei_=Eq2tf9zs59idfPO1Sc_9BbkevHn2Uhke46cjK3njEi9NnhOkJjIj66ODuTg3MkGhsS5c9y7k_zLVx3uYKtIECk83ipkB148PHc1kP6InPmQ3hBDl8Dcj5UHi9RXWQOHdeHIRrP5xUgFQ_dHy66O0i2gUjg40g-y1FFX7mbGt-C18hQWUQyBOx_04EEF7RBz2VC7QRudfN2tfbTs1H5TngZ_lacF59aWLEBL9JLS_0ZyDbw."><img alt="NISSAN SENTRA S 2.0 FLEXSTART 16V AUT." border="0" class="center-on-narrow" height="149" src="https://d1x1xhcjqq6e69.cloudfront.net/fotos/r/1073663/v/9796507/VJuQYybmez0.jpg" style="height: auto;display:block;" width="204"> </a>
+                                             <p style="margin:0 0 0 0;background:#414141;font-family: sans-serif; font-size: 20px; color: #ffffff;font-weight:bold; text-align:center; padding:5px 0;mso-height-rule: exactly;">R$ 54.990,00
+                                             </p>
+                                             </td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                    </td>
+                                    <!-- Column : END --><!-- Column : BEGIN -->
+                                    <td class="stack-column-center" width="50%">
+                                    <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                       <tbody>
+                                          <tr>
+                                             <td class="center-on-narrow" dir="ltr" style="font-family: sans-serif; font-size: 14px; mso-height-rule: exactly; line-height: 20px; color: #414141; text-align: left;padding:0 0 0 0;" valign="top">
+                                             <p style="font-family: sans-serif; font-weight:bold; font-size: 18px;text-transform:uppercase;margin:0 0 15px 0;"><br class="visible">
+                                             NISSAN SENTRA S 2.0 FLEXSTART 16V AUT.
+                                             </p>
+                                             Ano: <strong>2015</strong><br>
+                                             Modelo: <strong>SENTRA S 2.0 FLEXSTART 16V AUT.</strong><br>
+                                             Cor: <strong>PRATA</strong><br>
+                                             Portas: <strong>2</strong><br>
+                                             Combustível <strong>FLEX</strong><br>
+                                             Câmbio: <strong>Automático</strong><br>
+                                             Placa: <strong>2</strong></td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                    </td>
+                                    <!-- Column : END -->
+                                 </tr>
+                              </tbody>
+                           </table>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td style="font-family: sans-serif; font-size: 16px; text-align:left; mso-height-rule: exactly; line-height: 26px; color: #414141;padding:25px 35px">
+                           <p style="margin:0 0 20px 0;font-family: sans-serif;font-size:18px;font-weight:bold;text-align:center">Veja a mensagem do cliente:
+                           </p>
+                           <strong>Teste  ConnectLead<br>
+                           79988551100<br>
+                           antonio.walerio@connectlead.com.br</strong>
+
+                           <p>Gentileza descartar<br>
+                           <br>
+                           <strong>Veículo na Troca: Não</strong>
+                           </p>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </td>
+               </tr>
+            </tbody>
+         </table>
+         </td>
+      </tr>
+      <!-- 1 Column Text : END --><!-- 1 Column Text : BEGIN -->
+      <tr>
+         <td bgcolor="#e5e5e5" style="padding: 35px;">
+         <table border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tbody>
+               <tr>
+                  <td class="center-on-narrow" dir="ltr" style="font-family:Arial, sans-serif; font-size: 18px; mso-height-rule: exactly; line-height:24px; text-align:center; color: #414141; border:3px solid #9e092e;padding: 20px 35px;" valign="top">Aproveite essa <strong>oportunidade para entrar em contato</strong> e fechar o negócio.<br class="visible">
+                  <strong style="color:#9e092e">Boa venda.</strong></td>
+               </tr>
+            </tbody>
+         </table>
+         </td>
+      </tr>
+      <!-- 1 Column Text : END --><!-- Thumbnail Right, Text Left : BEGIN -->
+      <tr>
+         <td align="center" bgcolor="#ffffff" dir="rtl" style="padding: 35px;" valign="top" width="100%">
+         <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tbody>
+               <tr><!-- Column : BEGIN -->
+                  <td class="stack-column-center" width="25%">
+                  <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                     <tbody>
+                        <tr>
+                           <td dir="ltr" style="padding: 0 10px 10px; text-align:right" valign="top"><img alt="alt_text" border="0" class="center-on-narrow" height="104" src="http://static.cdn.responsys.net/i2/responsysimages/meucarro/contentlibrary/campaigns/auto_prosposta_loja_sem_pap/img/logo-bv.jpg" style="height: auto; background: #ffffff; font-family: sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #7c7c7b;" width="89"></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </td>
+                  <!-- Column : END --><!-- Column : BEGIN -->
+                  <td class="stack-column-center" width="75%">
+                  <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                     <tbody>
+                        <tr>
+                           <td class="center-on-narrow" dir="ltr" style="font-family:Arial, sans-serif; font-size: 10px; mso-height-rule: exactly; line-height: 16px; color: #414141; text-align: left;" valign="top">Créditos e condições sujeitos a análise. Informe-se sobre o CET antes de contratar o seu empréstimo/financiamento. Use o crédito de forma consciente. Sugestões, cancelamentos, elogios, reclamações ou informações gerais de produtos e serviços, contato o SAC - informações, reclamações, cancelamentos ou elogios: 08<span style="white-space: nowrap;"></span>00 7<span style="white-space: nowrap;"></span>70 33<span style="white-space: nowrap;"></span>35 ou 08<span style="white-space: nowrap;"></span>00 70<span style="white-space: nowrap;"></span>1 86<span style="white-space: nowrap;"></span>61 (deficientes auditivos e de fala). Ouvidoria de seg. a sex., das 9h às 18h: 08<span style="white-space: nowrap;"></span>00 70<span style="white-space: nowrap;"></span>7 00<span style="white-space: nowrap;"></span>83 ou 08<span style="white-space: nowrap;"></span>00 70<span style="white-space: nowrap;"></span>1 86<span style="white-space: nowrap;"></span>61 (deficientes auditivos e de fala). Exceto feriados nacionais.</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </td>
+                  <!-- Column : END -->
+               </tr>
+            </tbody>
+         </table>
+         </td>
+      </tr>
+      <!-- Thumbnail Right, Text Left : END -->
+   </tbody>
+</table>
+<!-- Email Body : END --></center><table cellpadding="0" cellspacing="0" style="border: 0px; padding: 0px; margin: 0px; position: absolute; display: none; float: left">
+<tbody><tr>
+<td height="1" style="font-size: 1px; line-height: 1px; padding: 0px;">
+<br><img src="http://contato.meucarronovo.com.br/pub/as?_ri_=X0Gzc2X%3DYQpglLjHJlTQGgJ4hOKEb8rozeHebizftXMh7KMdEbMIWEf4iuWoNrRyXeKnVXHkMX%3Dw&amp;_ei_=EolaGGF4SNMvxFF7KucKuWOo3VZeO0B4r3MFuj0UMRU3y_I3dOm5qmGt2aAY0Ln5A-TPfSNr2-ODRt7awxtUqisiHQ-JRmBNt1o38IJzDBlXJIYbXEIH4uIiiS9peYE.">
+</td>
+</tr>
+</tbody></table>
+
+
+
+</p>
+                        <!-- /ko -->
+                       
+                    </div>
+                </div>
