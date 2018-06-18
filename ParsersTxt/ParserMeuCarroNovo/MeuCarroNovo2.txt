@@ -1,21 +1,4 @@
-
-<div class="modal-content" style="width:800px;">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                        <h4 class="modal-title" data-bind="text: Lea_Titulo">Atenção: Chegou uma proposta para  - Cerato 1.6 16v Flex Aut.</h4>
-                        <!-- ko if: Sta_Staging() && Sta_Staging().length > 0 && Sta_Staging()[0].Stp_StagingPart.length > 0 --><!-- /ko -->
-                    </div>
-                    <div class="modal-body">
-                        <audio controls="" data-bind="visible: Sta_Staging().length > 0" style="display: none;">
-                            <source id="playmp3" type="audio/mpeg" data-bind="attr: { src: $root.AudioUrl }">
-                            Your browser does not support the audio element.
-                        </audio>
-                        <!-- ko if: Lea_OrigemSecundaria() != null --><!-- /ko -->
-                        <!-- ko if: Lea_SubOrigem() != null --><!-- /ko -->                        
-                        <!-- ko if: Lea_Descricao -->
-                        <p data-bind="html: Lea_Descricao" id="emailBody">
-
-   <meta content="text/html; charset=UTF-8" http-equiv="content-type"><!-- utf-8 works for most cases -->
+<meta content="text/html; charset=UTF-8" http-equiv="content-type"><!-- utf-8 works for most cases -->
    <meta content="width=device-width" name="viewport"><!-- Forcing initial-scale shouldn't be necessary -->
    <meta content="IE=edge" http-equiv="X-UA-Compatible"><!-- Use the latest (edge) version of IE rendering engine -->
    <meta content="" name="x-apple-disable-message-reformatting"><!-- Disable auto-scale in iOS 10 Mail entirely -->
@@ -296,11 +279,3 @@ font-family: sans-serif !important;
 </td>
 </tr>
 </tbody></table>
-
-
-
-</p>
-                        <!-- /ko -->
-                       
-                    </div>
-                </div>

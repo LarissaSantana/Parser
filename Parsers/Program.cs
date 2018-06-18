@@ -919,59 +919,79 @@ namespace Parsers
 
         }
         #endregion
-        #region MeuCarroNovo
-
-        //teste
-        private void ParserMeuCarroNovos(out string nome, out string telefone, out string email, out string titulo)
+        private void ParserFattoreFiat(out string nomeContato, out string email, out string telefone, out string titulo)
         {
-            //Obtendo nome
-            nome = "";
-            //Pegar o índice da frase a partir da sua primeira letra
-            var indice = _email.IndexOf("mensagem do cliente:");
+            //TRATAMENTOS
+            //Pode ser usado para tratar nome ou título
+            string tratarNome(string nome)
+            {
+                string pattern = @"/^[a-záàâãéèêíïóôõöúçñ ]+$/i";
+                Regex rgx = new Regex(pattern);
+                nome = rgx.Replace(nome, "");
+                return nome;
+            }
+
+            string tratarTelefone(string tel)
+            {
+                tel = tel.Replace("-", "").Replace("(", "").Replace(")", "").Replace(" ", "").Trim();
+                if (tel.Length > 14) //Telefone inválido
+                    tel = "";
+                return tel;
+            }
+
+            //NOME 
+            nomeContato = "";
+            var indice = _email.IndexOf("Nome: </b>") + 10;
             if (indice >= 0)
             {
-                /* Pegar o índice da primeira ocorrência de <strong>, a partir de "mensagem do cliente", e somar 8 (8 caracteres de <strong>) */
-                indice = _email.IndexOf("<strong>", indice) + 8;
-
-                /* Pegar o indice de <br> (porque é o que vem depois do nome do cliente) a partir do primeiro indice depois de <strong> */
-                var spnIndex = _email.IndexOf("<br>", indice);
+                var spnIndex = _email.IndexOf("</p>", indice);
                 if ((indice < _email.Length) && (spnIndex > indice) && ((spnIndex - indice) < _email.Length))
-                    nome = _email.Substring(indice, ((spnIndex) - (indice))).Trim();
-                indice = spnIndex + 4;
+                    nomeContato = tratarNome(_email.Substring(indice, (spnIndex - indice)).Trim());
             }
 
-            //Obtendo telefone
-            telefone = "";
-            if (_email.IndexOf("cliente:") >= 0)
-            {
-                var spnIndex = _email.IndexOf("<br>", indice);
-                if ((indice < _email.Length) && (spnIndex > indice) && ((spnIndex - indice) < _email.Length))
-                    telefone = _email.Substring(indice, ((spnIndex) - (indice))).Replace("-", "").Replace("(", "").Replace(")", "").Replace(" ", "").Trim();
-                if (telefone.Length > 14) telefone = ""; //Telefone inválido
-                if (telefone == "&nbsp;") telefone = "";
-                indice = spnIndex + 4;
-            }
-
-            //Obtendo e-mail
+            //EMAIL
             email = "";
-            if (_email.IndexOf("cliente:") >= 0)
+            indice = _email.IndexOf("E-mail: </b>", 0) + 12;
+            if (indice >= 0)
             {
-                var spnIndex = _email.IndexOf("</strong>", indice);
+                var spnIndex = _email.IndexOf("</p>", indice);
                 if ((indice < _email.Length) && (spnIndex > indice) && ((spnIndex - indice) < _email.Length))
-                    email = _email.Substring(indice, ((spnIndex) - (indice))).Trim();
+                    email = (_email.Substring(indice, (spnIndex - indice)).Trim());
             }
 
-            //Obtendo título
-            titulo = "";
-            indice = _email.IndexOf("Modelo:") + 7;
-            if (_email.IndexOf("Modelo:") >= 7)
+            //TELEFONE
+            telefone = "";
+            indice = _email.IndexOf("Fone: </b>", 0) + 10;
+            if (indice >= 0)
             {
-                indice = _email.IndexOf("<strong>", indice) + 8;
-                var spnIndex = _email.IndexOf("</strong>", indice);
+                var spnIndex = _email.IndexOf("</p>", indice);
                 if ((indice < _email.Length) && (spnIndex > indice) && ((spnIndex - indice) < _email.Length))
-                    titulo = _email.Substring(indice, spnIndex - indice).Trim();
+                    telefone = tratarTelefone(_email.Substring(indice, (spnIndex - indice)).Trim());
+            }
+
+            //TITULO
+            titulo = "";
+            indice = _email.IndexOf("culo: </b>", 0);
+            if (indice >= 0)
+            {
+                indice += 10;
+                var indice2 = _email.IndexOf("<a href=", indice);
+                if (indice2 > 0)
+                {
+                    indice2 = _email.IndexOf("\">", indice2) + 2;
+                    var spnIndex = _email.IndexOf("</a>", indice2);
+                    if ((indice2 < _email.Length) && (spnIndex > indice2) && ((spnIndex - indice2) < _email.Length))
+                        titulo = tratarNome(_email.Substring(indice2, (spnIndex - indice2)).Trim());
+                }
+                else
+                {
+                    var spnIndex = _email.IndexOf("</p>", indice);
+                    if ((indice < _email.Length) && (spnIndex > indice) && ((spnIndex - indice) < _email.Length))
+                        titulo = tratarNome(_email.Substring(indice, (spnIndex - indice)).Trim());
+                }
             }
         }
+        #region MeuCarroNovo
 
         private void ParserMeuCarroNovo(out string nome, out string telefone, out string email, out string titulo)
         {
@@ -1023,7 +1043,152 @@ namespace Parsers
                     titulo = _email.Substring(indice, spnIndex - indice).Trim();
             }
         }
+
+        private void ParserMeuCarroNovos(out string nome, out string telefone, out string email, out string titulo)
+        {
+            //Obtendo nome
+            nome = "";
+            var indiceNome = 0;
+            //Pegar o índice da frase a partir da sua primeira letra
+            //var indice = _email.IndexOf("mensagem do cliente:");
+            var indice = _email.IndexOf("<strong>");
+            if (indice >= 0)
+            {
+                indice = _email.IndexOf("cliente:") + 8;
+                indice = _email.IndexOf("<strong>", indice) + 8;
+                var spnIndex = _email.IndexOf("<br>", indice);
+                if ((indice < _email.Length) && (spnIndex > indice) && ((spnIndex - indice) < _email.Length))
+                {
+                    nome = _email.Substring(indice, ((spnIndex) - (indice))).Trim();
+                    indiceNome = indice;
+                }
+                else
+                    nome = "";
+            }
+            else
+            {
+                indice = _email.IndexOf("cliente:");
+                if (indice >= 0)
+                {
+                    indice = (_email.IndexOf("&lt;strong&gt;</span>", indice)) + 21;
+                    var spnIndex = _email.IndexOf("<", indice);
+                    if ((indice < _email.Length) && (spnIndex > indice) && (spnIndex - indice) < _email.Length)
+                    {
+                        nome = _email.Substring(indice, (spnIndex) - (indice)).Trim();
+                        indiceNome = indice;
+                    }
+                }
+                else
+                {
+                    nome = "";
+                }
+            }
+            //Obtendo telefone
+            telefone = "";
+            if (indiceNome >= 0)
+            {
+                var indiceTel = -1;
+                if (indiceNome >= 8)
+                    indiceTel = _email.IndexOf("<strong>", indiceNome - 8);
+
+                if (indiceTel == -1)
+                {
+                    indiceNome = _email.IndexOf("content", indiceNome);
+                    indiceNome = _email.IndexOf(">", indiceNome) + 1;
+                    var spnIndex = _email.IndexOf("<", indiceNome);
+                    if ((indiceNome < _email.Length) && (spnIndex > indiceNome) && ((spnIndex - indiceNome) < _email.Length))
+                        telefone = _email.Substring(indiceNome, ((spnIndex) - (indiceNome))).Replace("-", "").Replace("(", "").Replace(")", "").Replace(" ", "").Trim();
+                    if (telefone.Length > 14) telefone = ""; //Telefone inválido
+                    if (telefone == "&nbsp;") telefone = "";
+                }
+                else
+                {
+                    indiceTel = _email.IndexOf("<br>", indiceTel) + 4;
+                    var spnIndex = _email.IndexOf("<br>", indiceTel);
+                    if ((indiceTel < _email.Length) && (spnIndex > indiceTel) && ((spnIndex - indiceTel) < _email.Length))
+                        telefone = _email.Substring(indiceTel, ((spnIndex) - (indiceTel))).Replace("-", "").Replace("(", "").Replace(")", "").Replace(" ", "").Trim();
+                    if (telefone.Length > 14) telefone = ""; //Telefone inválido
+                    if (telefone == "&nbsp;") telefone = "";
+                }
+            }
+
+            //Obtendo e-mail
+            email = "";
+            indice = _email.IndexOf("<strong>");
+            if (indice == -1)
+            {
+                indice = _email.IndexOf("cliente:");
+                if (indice >= 0)
+                {
+                    var spnIndex = _email.IndexOf("</strong>", indice);
+                    if (spnIndex >= 0)
+                    {
+                        if ((indice < _email.Length) && (spnIndex > indice) && ((spnIndex - indice) < _email.Length))
+                            email = _email.Substring(indice, ((spnIndex) - (indice))).Trim();
+                        else
+                            email = "";
+                    }
+                    else
+                    {
+                        indice = _email.IndexOf("mailto:", indice);
+                        indice = _email.IndexOf(">", indice) + 1;
+                        spnIndex = _email.IndexOf("</a>", indice);
+                        if ((indice < _email.Length) && (spnIndex > indice) && ((spnIndex - indice) < _email.Length))
+                        {
+                            email = _email.Substring(indice, ((spnIndex) - (indice))).Trim();
+                        }
+                        else
+                            email = "";
+                    }
+                }
+            }
+            else
+            {
+                indice = _email.IndexOf("cliente:");
+                indice = _email.IndexOf("<br>", indice) + 4;
+                indice = _email.IndexOf("<br>", indice) + 4;
+                var spnIndex = _email.IndexOf("</strong>", indice);
+                if ((indice < _email.Length) && (spnIndex > indice) && ((spnIndex - indice) < _email.Length))
+                    email = _email.Substring(indice, ((spnIndex) - (indice))).Trim();
+                else
+                    email = "";
+            }
+
+
+            //Obtendo título
+            titulo = "";
+            indice = _email.IndexOf("Modelo:") + 7;
+            if (indice >= 0)
+            {
+                var indiceTit = -1;
+                indiceTit = _email.IndexOf("<span class=", indice);
+                indice = _email.IndexOf("<strong>", indice);
+                if (indiceTit == -1)
+                {
+                    indice += 8;
+                    if (indice >= 0)
+                    {
+                        var spnIndex = _email.IndexOf("</strong>", indice);
+                        if ((indice < _email.Length) && (spnIndex > indice) && ((spnIndex - indice) < _email.Length))
+                            titulo = _email.Substring(indice, spnIndex - indice).Trim();
+                        else
+                            titulo = "";
+                    }
+                }
+                else
+                {
+                    indiceTit = _email.IndexOf("</span>", indiceTit);
+                    indiceTit += 7;
+                    var spnIndex = _email.IndexOf("<span", indiceTit);
+                    if ((indiceTit < _email.Length) && (spnIndex > indiceTit) && ((spnIndex - indiceTit) < _email.Length))
+                        titulo = _email.Substring(indiceTit, spnIndex - indiceTit).Trim();
+                    else
+                        titulo = "";
+                }
+            }
+        }
         #endregion
+
         private string ExtrairEmail(string value)
         {
             const string MatchEmailPattern =
@@ -1112,6 +1277,9 @@ namespace Parsers
                 case Parsers.SamamHyundai:
                     ParserSamamHyundai(out nomeContato, out telefone, out email, out titulo);
                     break;
+                case Parsers.ParserFattoreFiat:
+                    ParserFattoreFiat(out nomeContato, out email, out telefone, out titulo);
+                    break;
                 default:
                     break;
             }
@@ -1145,6 +1313,7 @@ namespace Parsers
         MeuCarroNovo,
         Nissan,
         SearchOpticsViamondo,
-        SamamHyundai
+        SamamHyundai,
+        ParserFattoreFiat
     }
 }

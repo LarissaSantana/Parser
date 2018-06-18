@@ -1,0 +1,30 @@
+<div class="modal-content" style="width:800px;">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h4 class="modal-title" data-bind="text: Lea_Titulo">Fattore - Proposta para veículo semi-novo</h4>
+                        <!-- ko if: Sta_Staging() && Sta_Staging().length > 0 && Sta_Staging()[0].Stp_StagingPart.length > 0 --><!-- /ko -->
+                    </div>
+                    <div class="modal-body">
+                        <audio controls="" data-bind="visible: Sta_Staging().length > 0" style="display: none;">
+                            <source id="playmp3" type="audio/mpeg" data-bind="attr: { src: $root.AudioUrl }">
+                            Your browser does not support the audio element.
+                        </audio>
+                        <!-- ko if: Lea_OrigemSecundaria() != null --><!-- /ko -->
+                        <!-- ko if: Lea_SubOrigem() != null --><!-- /ko -->                        
+                        <!-- ko if: Lea_Descricao -->
+                        <p data-bind="html: Lea_Descricao" id="emailBody">
+ <p>Você recebeu uma nova proposta para um veículo:</p>
+ <p><b>Veículo: </b><a href="http://grupofattore.com.br/seminovos/?veiculo=hyundai_tucson_66">Hyundai Tucson GLSB</a></p>
+ <p><b>Nome: </b>Teste Seminovos </p>
+ <p><b>E-mail: </b>ivens.silva@connectlead.com.br</p>
+ <p><b>Fone: </b>(87) 89171-8178</p>
+ <p><b>CPF/CNPJ: </b>437.241.110-37</p>
+ <p><b>Concessionária mais próxima: </b>Fattore | São João da Boa Vista/SP</p>
+ <p><b>Quer financiar: </b>Sim</p>
+ <p><b>Quer receber ofertas: </b>Sim</p>
+ <p><b>Mensagem: </b></p><p>Teste Seminovos Tucson</p>
+</p>
+                        <!-- /ko -->
+                       
+                    </div>
+                </div>

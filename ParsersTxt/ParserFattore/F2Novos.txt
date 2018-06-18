@@ -1,0 +1,30 @@
+
+<div class="modal-content" style="width:800px;">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h4 class="modal-title" data-bind="text: Lea_Titulo">Fattore Fiat - Pedido de Cotação (Carros Novos)</h4>
+                        <!-- ko if: Sta_Staging() && Sta_Staging().length > 0 && Sta_Staging()[0].Stp_StagingPart.length > 0 --><!-- /ko -->
+                    </div>
+                    <div class="modal-body">
+                        <audio controls="" data-bind="visible: Sta_Staging().length > 0" style="display: none;">
+                            <source id="playmp3" type="audio/mpeg" data-bind="attr: { src: $root.AudioUrl }">
+                            Your browser does not support the audio element.
+                        </audio>
+                        <!-- ko if: Lea_OrigemSecundaria() != null --><!-- /ko -->
+                        <!-- ko if: Lea_SubOrigem() != null --><!-- /ko -->                        
+                        <!-- ko if: Lea_Descricao -->
+                        <p data-bind="html: Lea_Descricao" id="emailBody">
+ <p>Você recebeu uma novo pedido de cotação pelo site:</p>
+ <p><b>Concessionária: </b>Fiat Fattore | Itapira/SP</p>
+ <p><b>Nome: </b>Teste Novos</p>
+ <p><b>E-mail: </b>ivens.silva@connectlead.com.br</p>
+ <p><b>Fone: </b>(49) 71978-9757</p>
+ <p><b>CPF/CNPJ: </b>732.769.160-02</p>
+ <p><b>Veículo: </b>Cronos 2018</p>
+ <p><b>Versão: </b>CRONOS 1.3 Flex Manual</p>
+ <p><b>Mensagem: </b></p><p>Teste Fattore Fiat, recebimento de Inbox Novos 01</p>
+</p>
+                        <!-- /ko -->
+                       
+                    </div>
+                </div>
