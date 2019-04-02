@@ -1,8 +1,7 @@
-<!-- Teste -->
 
 <div class="modal-content" style="width:800px;">
                     <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">Ã—</button>
                         <h4 class="modal-title" data-bind="text: Lea_Titulo">Fattore Fiat - Contato pelo site</h4>
                         <!-- ko if: Sta_Staging() && Sta_Staging().length > 0 && Sta_Staging()[0].Stp_StagingPart.length > 0 --><!-- /ko -->
                     </div>
@@ -15,8 +14,8 @@
                         <!-- ko if: Lea_SubOrigem() != null --><!-- /ko -->                        
                         <!-- ko if: Lea_Descricao -->
                         <p data-bind="html: Lea_Descricao" id="emailBody">
- <p>Você recebeu uma novo contato pelo site:</p>
- <p><b>Concessionária: </b>Fiat Fattore | Itapira/SP</p>
+ <p>VocÃª recebeu uma novo contato pelo site:</p>
+ <p><b>ConcessionÃ¡ria: </b>Fiat Fattore | Itapira/SP</p>
  <p><b>Nome: </b>Dayana Teste</p>
  <p><b>E-mail: </b>dayana_aliende@hotmail.com</p>
  <p><b>Fone: </b>(19) 3634-6655</p>
